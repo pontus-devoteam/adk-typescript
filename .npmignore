@@ -1,0 +1,47 @@
+# Source code
+src/
+tests/
+examples/
+docs/
+
+# Config files
+.github/
+.gitignore
+.npmignore
+.eslintrc*
+.prettierrc*
+tsconfig.json
+jest.config.js
+.editorconfig
+.travis.yml
+.circleci/
+.vscode/
+
+# Development files
+*.test.ts
+*.spec.ts
+__tests__/
+__mocks__/
+coverage/
+.nyc_output/
+
+# Documentation and assets
+docs/
+*.md
+!README.md
+!LICENSE.md
+assets/
+images/
+adk-typescript.jpg
+
+# Environment and logs
+.env*
+*.log
+.memory/
+
+# Build artifacts
+tsconfig.tsbuildinfo
+
+# Development tools
+nodemon.json
+.eslintcache 
