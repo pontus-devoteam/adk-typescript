@@ -75,11 +75,19 @@ jobs:
       
       - name: Build
         run: npm run build
-        
-      - name: Create Git Tag
+
+      - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git add package.json package-lock.json
+          git commit -m "chore: bump version to v${{ github.event.inputs.version }}"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Create Git Tag
+        run: |
           git tag -a v${{ github.event.inputs.version }} -m "Release v${{ github.event.inputs.version }}"
           git push --tags
         env:
@@ -93,7 +101,28 @@ jobs:
             --title "Release v${{ github.event.inputs.version }}" \
             --notes "${{ github.event.inputs.releaseNotes }}"
       
-      - name: Publish to NPM
+      - name: Check NPM Organization Access
+        id: check-org
+        run: |
+          ORG_DETAILS=$(npm org ls pontus-devoteam 2>/dev/null || echo "not-found")
+          if [[ "$ORG_DETAILS" == "not-found" ]]; then
+            echo "NPM organization '@pontus-devoteam' not found or you don't have access. Creating package with --access public flag."
+            echo "exists=false" >> $GITHUB_OUTPUT
+          else
+            echo "NPM organization '@pontus-devoteam' exists and you have access."
+            echo "exists=true" >> $GITHUB_OUTPUT
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish to NPM (New Scoped Package)
+        if: steps.check-org.outputs.exists == 'false'
         run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
+      - name: Publish to NPM (Existing Package)
+        if: steps.check-org.outputs.exists == 'true'
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
