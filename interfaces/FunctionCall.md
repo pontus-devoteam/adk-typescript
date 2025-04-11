@@ -6,7 +6,7 @@
 
 # Interface: FunctionCall
 
-Defined in: [models/response/LLMResponse.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L6)
+Defined in: [models/response/LLMResponse.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L6)
 
 Function call result from LLM
 
@@ -16,7 +16,7 @@ Function call result from LLM
 
 > **arguments**: `string`
 
-Defined in: [models/response/LLMResponse.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L15)
+Defined in: [models/response/LLMResponse.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L15)
 
 Arguments for the function, serialized as a JSON string
 
@@ -26,6 +26,6 @@ Arguments for the function, serialized as a JSON string
 
 > **name**: `string`
 
-Defined in: [models/response/LLMResponse.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L10)
+Defined in: [models/response/LLMResponse.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L10)
 
 Name of the function to call

@@ -6,7 +6,7 @@
 
 # Enumeration: AuthSchemeType
 
-Defined in: [models/auth/AuthScheme.ts:4](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L4)
+Defined in: [models/auth/AuthScheme.ts:4](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L4)
 
 Authentication scheme types
 
@@ -16,7 +16,7 @@ Authentication scheme types
 
 > **APIKEY**: `"apiKey"`
 
-Defined in: [models/auth/AuthScheme.ts:5](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L5)
+Defined in: [models/auth/AuthScheme.ts:5](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L5)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [models/auth/AuthScheme.ts:5](https://github.com/pontus-devoteam/adk
 
 > **HTTP**: `"http"`
 
-Defined in: [models/auth/AuthScheme.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L6)
+Defined in: [models/auth/AuthScheme.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L6)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [models/auth/AuthScheme.ts:6](https://github.com/pontus-devoteam/adk
 
 > **OAUTH2**: `"oauth2"`
 
-Defined in: [models/auth/AuthScheme.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L7)
+Defined in: [models/auth/AuthScheme.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L7)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [models/auth/AuthScheme.ts:7](https://github.com/pontus-devoteam/adk
 
 > **OPENID\_CONNECT**: `"openIdConnect"`
 
-Defined in: [models/auth/AuthScheme.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L8)
+Defined in: [models/auth/AuthScheme.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L8)

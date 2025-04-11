@@ -6,7 +6,7 @@
 
 # Interface: ListSessionOptions
 
-Defined in: [models/memory/Session.ts:139](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L139)
+Defined in: [models/memory/Session.ts:139](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L139)
 
 Options for listing sessions
 
@@ -16,7 +16,7 @@ Options for listing sessions
 
 > `optional` **createdAfter**: `Date`
 
-Defined in: [models/memory/Session.ts:148](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L148)
+Defined in: [models/memory/Session.ts:148](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L148)
 
 Only include sessions created after this time
 
@@ -26,7 +26,7 @@ Only include sessions created after this time
 
 > `optional` **limit**: `number`
 
-Defined in: [models/memory/Session.ts:143](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L143)
+Defined in: [models/memory/Session.ts:143](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L143)
 
 Maximum number of sessions to return
 
@@ -36,7 +36,7 @@ Maximum number of sessions to return
 
 > `optional` **metadataFilter**: `Record`\<`string`, `any`\>
 
-Defined in: [models/memory/Session.ts:158](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L158)
+Defined in: [models/memory/Session.ts:158](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L158)
 
 Filter sessions by metadata
 
@@ -46,6 +46,6 @@ Filter sessions by metadata
 
 > `optional` **updatedAfter**: `Date`
 
-Defined in: [models/memory/Session.ts:153](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L153)
+Defined in: [models/memory/Session.ts:153](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L153)
 
 Only include sessions updated after this time

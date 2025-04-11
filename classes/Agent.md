@@ -6,7 +6,7 @@
 
 # Class: Agent
 
-Defined in: [agents/specialized/Agent.ts:88](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L88)
+Defined in: [agents/specialized/Agent.ts:88](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L88)
 
 Standard Agent implementation that uses an LLM
 
@@ -20,7 +20,7 @@ Standard Agent implementation that uses an LLM
 
 > **new Agent**(`config`): `Agent`
 
-Defined in: [agents/specialized/Agent.ts:152](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L152)
+Defined in: [agents/specialized/Agent.ts:152](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L152)
 
 Constructor for Agent
 
@@ -44,7 +44,7 @@ Constructor for Agent
 
 > **description**: `string`
 
-Defined in: [agents/base/BaseAgent.ts:19](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L19)
+Defined in: [agents/base/BaseAgent.ts:19](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L19)
 
 Description about the agent's capability
 The LLM uses this to determine whether to delegate control to the agent
@@ -59,7 +59,7 @@ The LLM uses this to determine whether to delegate control to the agent
 
 > **name**: `string`
 
-Defined in: [agents/base/BaseAgent.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L13)
+Defined in: [agents/base/BaseAgent.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L13)
 
 The agent's name
 Agent name must be a unique identifier within the agent tree
@@ -74,7 +74,7 @@ Agent name must be a unique identifier within the agent tree
 
 > `optional` **parentAgent**: [`BaseAgent`](BaseAgent.md)
 
-Defined in: [agents/base/BaseAgent.ts:25](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L25)
+Defined in: [agents/base/BaseAgent.ts:25](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L25)
 
 The parent agent of this agent
 Note that an agent can ONLY be added as sub-agent once
@@ -89,7 +89,7 @@ Note that an agent can ONLY be added as sub-agent once
 
 > **subAgents**: [`BaseAgent`](BaseAgent.md)[]
 
-Defined in: [agents/base/BaseAgent.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L30)
+Defined in: [agents/base/BaseAgent.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L30)
 
 The sub-agents of this agent
 
@@ -105,7 +105,7 @@ The sub-agents of this agent
 
 > **get** **rootAgent**(): [`BaseAgent`](BaseAgent.md)
 
-Defined in: [agents/base/BaseAgent.ts:56](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L56)
+Defined in: [agents/base/BaseAgent.ts:56](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L56)
 
 Gets the root agent of the agent tree
 
@@ -123,7 +123,7 @@ Gets the root agent of the agent tree
 
 > **addSubAgent**(`agent`): [`BaseAgent`](BaseAgent.md)
 
-Defined in: [agents/base/BaseAgent.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L63)
+Defined in: [agents/base/BaseAgent.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L63)
 
 Adds a sub-agent to this agent
 
@@ -147,7 +147,7 @@ Adds a sub-agent to this agent
 
 > **findAgent**(`name`): `undefined` \| [`BaseAgent`](BaseAgent.md)
 
-Defined in: [agents/base/BaseAgent.ts:92](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L92)
+Defined in: [agents/base/BaseAgent.ts:92](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L92)
 
 Finds an agent in the agent tree by name
 
@@ -171,7 +171,7 @@ Finds an agent in the agent tree by name
 
 > **findSubAgent**(`name`): `undefined` \| [`BaseAgent`](BaseAgent.md)
 
-Defined in: [agents/base/BaseAgent.ts:85](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L85)
+Defined in: [agents/base/BaseAgent.ts:85](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L85)
 
 Finds a sub-agent by name
 
@@ -195,7 +195,7 @@ Finds a sub-agent by name
 
 > **run**(`options`): `Promise`\<[`LLMResponse`](LLMResponse.md)\>
 
-Defined in: [agents/specialized/Agent.ts:383](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L383)
+Defined in: [agents/specialized/Agent.ts:383](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L383)
 
 Runs the agent with the given messages and configuration
 
@@ -229,7 +229,7 @@ Runs the agent with the given messages and configuration
 
 > **runStreaming**(`options`): `AsyncGenerator`\<[`LLMResponse`](LLMResponse.md)\>
 
-Defined in: [agents/specialized/Agent.ts:516](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L516)
+Defined in: [agents/specialized/Agent.ts:516](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L516)
 
 Runs the agent with streaming support
 

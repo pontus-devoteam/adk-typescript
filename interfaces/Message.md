@@ -6,7 +6,7 @@
 
 # Interface: Message
 
-Defined in: [models/request/LLMRequest.ts:35](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L35)
+Defined in: [models/request/LLMRequest.ts:35](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L35)
 
 Represents a message in the conversation
 
@@ -16,7 +16,7 @@ Represents a message in the conversation
 
 > **content**: [`MessageContent`](../type-aliases/MessageContent.md)
 
-Defined in: [models/request/LLMRequest.ts:37](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L37)
+Defined in: [models/request/LLMRequest.ts:37](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L37)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [models/request/LLMRequest.ts:37](https://github.com/pontus-devoteam
 
 > `optional` **function\_call**: `object`
 
-Defined in: [models/request/LLMRequest.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L39)
+Defined in: [models/request/LLMRequest.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L39)
 
 #### arguments
 
@@ -40,7 +40,7 @@ Defined in: [models/request/LLMRequest.ts:39](https://github.com/pontus-devoteam
 
 > `optional` **name**: `string`
 
-Defined in: [models/request/LLMRequest.ts:38](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L38)
+Defined in: [models/request/LLMRequest.ts:38](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L38)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [models/request/LLMRequest.ts:38](https://github.com/pontus-devoteam
 
 > **role**: [`MessageRole`](../type-aliases/MessageRole.md)
 
-Defined in: [models/request/LLMRequest.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L36)
+Defined in: [models/request/LLMRequest.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L36)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [models/request/LLMRequest.ts:36](https://github.com/pontus-devoteam
 
 > `optional` **tool\_call\_id**: `string`
 
-Defined in: [models/request/LLMRequest.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L44)
+Defined in: [models/request/LLMRequest.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L44)
 
 ***
 
@@ -64,4 +64,4 @@ Defined in: [models/request/LLMRequest.ts:44](https://github.com/pontus-devoteam
 
 > `optional` **tool\_calls**: [`ToolCall`](ToolCall.md)[]
 
-Defined in: [models/request/LLMRequest.ts:43](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/LLMRequest.ts#L43)
+Defined in: [models/request/LLMRequest.ts:43](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/LLMRequest.ts#L43)

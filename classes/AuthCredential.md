@@ -6,7 +6,7 @@
 
 # Class: `abstract` AuthCredential
 
-Defined in: [models/auth/AuthCredential.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L18)
+Defined in: [models/auth/AuthCredential.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L18)
 
 Base class for authentication credentials
 
@@ -23,7 +23,7 @@ Base class for authentication credentials
 
 > **new AuthCredential**(`type`): `AuthCredential`
 
-Defined in: [models/auth/AuthCredential.ts:27](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L27)
+Defined in: [models/auth/AuthCredential.ts:27](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L27)
 
 Constructor for AuthCredential
 
@@ -43,7 +43,7 @@ Constructor for AuthCredential
 
 > **type**: [`AuthCredentialType`](../enumerations/AuthCredentialType.md)
 
-Defined in: [models/auth/AuthCredential.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L22)
+Defined in: [models/auth/AuthCredential.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L22)
 
 Type of credential
 
@@ -53,7 +53,7 @@ Type of credential
 
 > **canRefresh**(): `boolean`
 
-Defined in: [models/auth/AuthCredential.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L44)
+Defined in: [models/auth/AuthCredential.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L44)
 
 Whether the token can be refreshed
 
@@ -67,7 +67,7 @@ Whether the token can be refreshed
 
 > `abstract` **getHeaders**(`config`): `Record`\<`string`, `string`\>
 
-Defined in: [models/auth/AuthCredential.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L39)
+Defined in: [models/auth/AuthCredential.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L39)
 
 Gets headers for HTTP requests
 
@@ -87,7 +87,7 @@ Gets headers for HTTP requests
 
 > `abstract` **getToken**(): `undefined` \| `string`
 
-Defined in: [models/auth/AuthCredential.ts:34](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L34)
+Defined in: [models/auth/AuthCredential.ts:34](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L34)
 
 Gets the authentication token
 
@@ -101,7 +101,7 @@ Gets the authentication token
 
 > **refresh**(): `Promise`\<`void`\>
 
-Defined in: [models/auth/AuthCredential.ts:51](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L51)
+Defined in: [models/auth/AuthCredential.ts:51](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L51)
 
 Refreshes the token
 

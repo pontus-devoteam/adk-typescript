@@ -6,7 +6,7 @@
 
 # Class: ApiKeyScheme
 
-Defined in: [models/auth/AuthScheme.ts:28](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L28)
+Defined in: [models/auth/AuthScheme.ts:28](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L28)
 
 API Key authentication scheme
 
@@ -20,7 +20,7 @@ API Key authentication scheme
 
 > **new ApiKeyScheme**(`config`): `ApiKeyScheme`
 
-Defined in: [models/auth/AuthScheme.ts:47](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L47)
+Defined in: [models/auth/AuthScheme.ts:47](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L47)
 
 Constructor for ApiKeyScheme
 
@@ -54,7 +54,7 @@ Constructor for ApiKeyScheme
 
 > `optional` **description**: `string`
 
-Defined in: [models/auth/AuthScheme.ts:42](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L42)
+Defined in: [models/auth/AuthScheme.ts:42](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L42)
 
 Description of the API key
 
@@ -64,7 +64,7 @@ Description of the API key
 
 > **in**: `"query"` \| `"header"` \| `"cookie"`
 
-Defined in: [models/auth/AuthScheme.ts:32](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L32)
+Defined in: [models/auth/AuthScheme.ts:32](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L32)
 
 Where the API key is sent
 
@@ -74,7 +74,7 @@ Where the API key is sent
 
 > **name**: `string`
 
-Defined in: [models/auth/AuthScheme.ts:37](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L37)
+Defined in: [models/auth/AuthScheme.ts:37](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L37)
 
 Name of the parameter
 
@@ -84,7 +84,7 @@ Name of the parameter
 
 > **type**: [`AuthSchemeType`](../enumerations/AuthSchemeType.md)
 
-Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L18)
+Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L18)
 
 The type of authentication scheme
 

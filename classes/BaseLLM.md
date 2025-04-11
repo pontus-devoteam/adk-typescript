@@ -6,7 +6,7 @@
 
 # Class: `abstract` BaseLLM
 
-Defined in: [llm/BaseLLM.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L8)
+Defined in: [llm/BaseLLM.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L8)
 
 Base class for all LLM implementations
 
@@ -22,7 +22,7 @@ Base class for all LLM implementations
 
 > **new BaseLLM**(`model`): `BaseLLM`
 
-Defined in: [llm/BaseLLM.ts:17](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L17)
+Defined in: [llm/BaseLLM.ts:17](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L17)
 
 Constructor for BaseLLM
 
@@ -42,7 +42,7 @@ Constructor for BaseLLM
 
 > **model**: `string`
 
-Defined in: [llm/BaseLLM.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L12)
+Defined in: [llm/BaseLLM.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L12)
 
 The name of the LLM model
 
@@ -52,7 +52,7 @@ The name of the LLM model
 
 > **connect**(`llmRequest`): [`BaseLLMConnection`](BaseLLMConnection.md)
 
-Defined in: [llm/BaseLLM.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L46)
+Defined in: [llm/BaseLLM.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L46)
 
 Creates a live connection to the LLM
 
@@ -76,7 +76,7 @@ BaseLLMConnection, the connection to the LLM
 
 > `abstract` **generateContentAsync**(`llmRequest`, `stream?`): `AsyncGenerator`\<[`LLMResponse`](LLMResponse.md), `void`, `unknown`\>
 
-Defined in: [llm/BaseLLM.ts:35](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L35)
+Defined in: [llm/BaseLLM.ts:35](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L35)
 
 Generates content from the given request
 
@@ -106,7 +106,7 @@ A generator of LLMResponses
 
 > `static` **supportedModels**(): `string`[]
 
-Defined in: [llm/BaseLLM.ts:24](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L24)
+Defined in: [llm/BaseLLM.ts:24](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L24)
 
 Returns a list of supported models in regex for LLMRegistry
 

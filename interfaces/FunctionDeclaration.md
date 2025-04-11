@@ -6,7 +6,7 @@
 
 # Interface: FunctionDeclaration
 
-Defined in: [models/request/FunctionDeclaration.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/FunctionDeclaration.ts#L22)
+Defined in: [models/request/FunctionDeclaration.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/FunctionDeclaration.ts#L22)
 
 Represents a function declaration for the LLM
 
@@ -16,7 +16,7 @@ Represents a function declaration for the LLM
 
 > **description**: `string`
 
-Defined in: [models/request/FunctionDeclaration.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/FunctionDeclaration.ts#L31)
+Defined in: [models/request/FunctionDeclaration.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/FunctionDeclaration.ts#L31)
 
 Description of what the function does
 
@@ -26,7 +26,7 @@ Description of what the function does
 
 > **name**: `string`
 
-Defined in: [models/request/FunctionDeclaration.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/FunctionDeclaration.ts#L26)
+Defined in: [models/request/FunctionDeclaration.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/FunctionDeclaration.ts#L26)
 
 Name of the function
 
@@ -36,6 +36,6 @@ Name of the function
 
 > **parameters**: [`JSONSchema`](JSONSchema.md)
 
-Defined in: [models/request/FunctionDeclaration.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/request/FunctionDeclaration.ts#L36)
+Defined in: [models/request/FunctionDeclaration.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/request/FunctionDeclaration.ts#L36)
 
 Parameters schema in JSON Schema format

@@ -6,7 +6,7 @@
 
 # Class: `abstract` BaseLLMConnection
 
-Defined in: [llm/BaseLLMConnection.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L6)
+Defined in: [llm/BaseLLMConnection.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L6)
 
 Base class for LLM connections
 
@@ -33,7 +33,7 @@ Base class for LLM connections
 
 > **get** **isActive**(): `boolean`
 
-Defined in: [llm/BaseLLMConnection.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L15)
+Defined in: [llm/BaseLLMConnection.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L15)
 
 Gets whether the connection is active
 
@@ -47,7 +47,7 @@ Gets whether the connection is active
 
 > **close**(): `void`
 
-Defined in: [llm/BaseLLMConnection.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L50)
+Defined in: [llm/BaseLLMConnection.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L50)
 
 Closes the connection
 
@@ -61,7 +61,7 @@ Closes the connection
 
 > `abstract` **onEnd**(`callback`): `void`
 
-Defined in: [llm/BaseLLMConnection.ts:45](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L45)
+Defined in: [llm/BaseLLMConnection.ts:45](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L45)
 
 Handles the end of the connection
 
@@ -83,7 +83,7 @@ The callback to handle the end
 
 > `abstract` **onError**(`callback`): `void`
 
-Defined in: [llm/BaseLLMConnection.ts:38](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L38)
+Defined in: [llm/BaseLLMConnection.ts:38](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L38)
 
 Handles errors from the LLM
 
@@ -105,7 +105,7 @@ The callback to handle errors
 
 > `abstract` **onResponse**(`callback`): `void`
 
-Defined in: [llm/BaseLLMConnection.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L31)
+Defined in: [llm/BaseLLMConnection.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L31)
 
 Handles responses from the LLM
 
@@ -127,7 +127,7 @@ The callback to handle responses
 
 > `abstract` **send**(`message`): `void`
 
-Defined in: [llm/BaseLLMConnection.ts:24](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L24)
+Defined in: [llm/BaseLLMConnection.ts:24](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L24)
 
 Sends a message to the LLM
 

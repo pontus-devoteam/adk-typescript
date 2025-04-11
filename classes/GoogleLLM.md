@@ -6,7 +6,7 @@
 
 # Class: GoogleLLM
 
-Defined in: [llm/providers/google/GoogleLLM.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/google/GoogleLLM.ts#L44)
+Defined in: [llm/providers/google/GoogleLLM.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/google/GoogleLLM.ts#L44)
 
 Google Gemini LLM implementation
 
@@ -20,7 +20,7 @@ Google Gemini LLM implementation
 
 > **new GoogleLLM**(`model`, `config?`): `GoogleLLM`
 
-Defined in: [llm/providers/google/GoogleLLM.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/google/GoogleLLM.ts#L63)
+Defined in: [llm/providers/google/GoogleLLM.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/google/GoogleLLM.ts#L63)
 
 Constructor for GoogleLLM
 
@@ -48,7 +48,7 @@ Constructor for GoogleLLM
 
 > **model**: `string`
 
-Defined in: [llm/BaseLLM.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L12)
+Defined in: [llm/BaseLLM.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L12)
 
 The name of the LLM model
 
@@ -62,7 +62,7 @@ The name of the LLM model
 
 > **connect**(`llmRequest`): [`BaseLLMConnection`](BaseLLMConnection.md)
 
-Defined in: [llm/BaseLLM.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L46)
+Defined in: [llm/BaseLLM.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L46)
 
 Creates a live connection to the LLM
 
@@ -90,7 +90,7 @@ BaseLLMConnection, the connection to the LLM
 
 > **generateContentAsync**(`llmRequest`, `stream`): `AsyncGenerator`\<[`LLMResponse`](LLMResponse.md), `void`, `unknown`\>
 
-Defined in: [llm/providers/google/GoogleLLM.ts:217](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/google/GoogleLLM.ts#L217)
+Defined in: [llm/providers/google/GoogleLLM.ts:217](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/google/GoogleLLM.ts#L217)
 
 Generates content from the given request
 
@@ -118,7 +118,7 @@ Generates content from the given request
 
 > `static` **supportedModels**(): `string`[]
 
-Defined in: [llm/providers/google/GoogleLLM.ts:91](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/google/GoogleLLM.ts#L91)
+Defined in: [llm/providers/google/GoogleLLM.ts:91](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/google/GoogleLLM.ts#L91)
 
 Returns a list of supported models in regex for LLMRegistry
 

@@ -6,7 +6,7 @@
 
 # Class: OpenIdConnectScheme
 
-Defined in: [models/auth/AuthScheme.ts:143](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L143)
+Defined in: [models/auth/AuthScheme.ts:143](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L143)
 
 OpenID Connect authentication scheme
 
@@ -20,7 +20,7 @@ OpenID Connect authentication scheme
 
 > **new OpenIdConnectScheme**(`config`): `OpenIdConnectScheme`
 
-Defined in: [models/auth/AuthScheme.ts:157](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L157)
+Defined in: [models/auth/AuthScheme.ts:157](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L157)
 
 Constructor for OpenIdConnectScheme
 
@@ -50,7 +50,7 @@ Constructor for OpenIdConnectScheme
 
 > `optional` **description**: `string`
 
-Defined in: [models/auth/AuthScheme.ts:152](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L152)
+Defined in: [models/auth/AuthScheme.ts:152](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L152)
 
 Description of the scheme
 
@@ -60,7 +60,7 @@ Description of the scheme
 
 > **openIdConnectUrl**: `string`
 
-Defined in: [models/auth/AuthScheme.ts:147](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L147)
+Defined in: [models/auth/AuthScheme.ts:147](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L147)
 
 OpenID Connect URL
 
@@ -70,7 +70,7 @@ OpenID Connect URL
 
 > **type**: [`AuthSchemeType`](../enumerations/AuthSchemeType.md)
 
-Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L18)
+Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L18)
 
 The type of authentication scheme
 

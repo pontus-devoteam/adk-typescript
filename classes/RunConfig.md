@@ -6,7 +6,7 @@
 
 # Class: RunConfig
 
-Defined in: [models/config/RunConfig.ts:54](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L54)
+Defined in: [models/config/RunConfig.ts:54](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L54)
 
 Configs for runtime behavior of agents
 
@@ -16,7 +16,7 @@ Configs for runtime behavior of agents
 
 > **new RunConfig**(`config?`): `RunConfig`
 
-Defined in: [models/config/RunConfig.ts:86](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L86)
+Defined in: [models/config/RunConfig.ts:86](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L86)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [models/config/RunConfig.ts:86](https://github.com/pontus-devoteam/a
 
 > `optional` **outputAudioTranscription**: `AudioTranscriptionConfig`
 
-Defined in: [models/config/RunConfig.ts:84](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L84)
+Defined in: [models/config/RunConfig.ts:84](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L84)
 
 Output audio transcription configuration
 
@@ -44,7 +44,7 @@ Output audio transcription configuration
 
 > `optional` **responseModalities**: `string`[]
 
-Defined in: [models/config/RunConfig.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L63)
+Defined in: [models/config/RunConfig.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L63)
 
 The output modalities
 
@@ -54,7 +54,7 @@ The output modalities
 
 > **saveInputBlobsAsArtifacts**: `boolean`
 
-Defined in: [models/config/RunConfig.ts:68](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L68)
+Defined in: [models/config/RunConfig.ts:68](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L68)
 
 Whether to save input blobs as artifacts
 
@@ -64,7 +64,7 @@ Whether to save input blobs as artifacts
 
 > `optional` **speechConfig**: `SpeechConfig`
 
-Defined in: [models/config/RunConfig.ts:58](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L58)
+Defined in: [models/config/RunConfig.ts:58](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L58)
 
 Speech configuration for the live agent
 
@@ -74,7 +74,7 @@ Speech configuration for the live agent
 
 > **streamingMode**: [`StreamingMode`](../enumerations/StreamingMode.md)
 
-Defined in: [models/config/RunConfig.ts:79](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L79)
+Defined in: [models/config/RunConfig.ts:79](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L79)
 
 Streaming mode
 
@@ -84,7 +84,7 @@ Streaming mode
 
 > **supportCFC**: `boolean`
 
-Defined in: [models/config/RunConfig.ts:74](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L74)
+Defined in: [models/config/RunConfig.ts:74](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L74)
 
 Whether to support Compositional Function Calling
 Only applicable for StreamingMode.SSE

@@ -6,7 +6,7 @@
 
 # Enumeration: StreamingMode
 
-Defined in: [models/config/RunConfig.ts:4](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L4)
+Defined in: [models/config/RunConfig.ts:4](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L4)
 
 Streaming mode options for agent execution
 
@@ -16,7 +16,7 @@ Streaming mode options for agent execution
 
 > **BIDI**: `"BIDI"`
 
-Defined in: [models/config/RunConfig.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L18)
+Defined in: [models/config/RunConfig.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L18)
 
 Bidirectional streaming
 
@@ -26,7 +26,7 @@ Bidirectional streaming
 
 > **NONE**: `"NONE"`
 
-Defined in: [models/config/RunConfig.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L8)
+Defined in: [models/config/RunConfig.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L8)
 
 No streaming
 
@@ -36,6 +36,6 @@ No streaming
 
 > **SSE**: `"SSE"`
 
-Defined in: [models/config/RunConfig.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/config/RunConfig.ts#L13)
+Defined in: [models/config/RunConfig.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/config/RunConfig.ts#L13)
 
 Server-Sent Events streaming

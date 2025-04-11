@@ -6,7 +6,7 @@
 
 # Interface: ToolConfig
 
-Defined in: [tools/base/BaseTool.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L7)
+Defined in: [tools/base/BaseTool.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L7)
 
 Configuration for tool initialization
 
@@ -16,7 +16,7 @@ Configuration for tool initialization
 
 > **description**: `string`
 
-Defined in: [tools/base/BaseTool.ts:16](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L16)
+Defined in: [tools/base/BaseTool.ts:16](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L16)
 
 Description of the tool
 
@@ -26,7 +26,7 @@ Description of the tool
 
 > `optional` **isLongRunning**: `boolean`
 
-Defined in: [tools/base/BaseTool.ts:21](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L21)
+Defined in: [tools/base/BaseTool.ts:21](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L21)
 
 Whether the tool is a long running operation
 
@@ -36,7 +36,7 @@ Whether the tool is a long running operation
 
 > `optional` **maxRetryAttempts**: `number`
 
-Defined in: [tools/base/BaseTool.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L31)
+Defined in: [tools/base/BaseTool.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L31)
 
 Maximum retry attempts
 
@@ -46,7 +46,7 @@ Maximum retry attempts
 
 > **name**: `string`
 
-Defined in: [tools/base/BaseTool.ts:11](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L11)
+Defined in: [tools/base/BaseTool.ts:11](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L11)
 
 Name of the tool
 
@@ -56,6 +56,6 @@ Name of the tool
 
 > `optional` **shouldRetryOnFailure**: `boolean`
 
-Defined in: [tools/base/BaseTool.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L26)
+Defined in: [tools/base/BaseTool.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L26)
 
 Whether the tool execution should be retried on failure

@@ -6,7 +6,7 @@
 
 # Interface: AgentConfig
 
-Defined in: [agents/specialized/Agent.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L18)
+Defined in: [agents/specialized/Agent.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L18)
 
 Configuration for Agent
 
@@ -16,7 +16,7 @@ Configuration for Agent
 
 > `optional` **appName**: `string`
 
-Defined in: [agents/specialized/Agent.ts:67](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L67)
+Defined in: [agents/specialized/Agent.ts:67](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L67)
 
 Application name (for multi-app environments)
 
@@ -26,7 +26,7 @@ Application name (for multi-app environments)
 
 > **description**: `string`
 
-Defined in: [agents/specialized/Agent.ts:27](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L27)
+Defined in: [agents/specialized/Agent.ts:27](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L27)
 
 Description of the agent
 
@@ -36,7 +36,7 @@ Description of the agent
 
 > `optional` **instructions**: `string`
 
-Defined in: [agents/specialized/Agent.ts:37](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L37)
+Defined in: [agents/specialized/Agent.ts:37](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L37)
 
 Instructions for the agent
 
@@ -46,7 +46,7 @@ Instructions for the agent
 
 > `optional` **maxMemoryItems**: `number`
 
-Defined in: [agents/specialized/Agent.ts:77](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L77)
+Defined in: [agents/specialized/Agent.ts:77](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L77)
 
 The maximum number of memory items to include in augmentation
 
@@ -56,7 +56,7 @@ The maximum number of memory items to include in augmentation
 
 > `optional` **maxToolExecutionSteps**: `number`
 
-Defined in: [agents/specialized/Agent.ts:47](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L47)
+Defined in: [agents/specialized/Agent.ts:47](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L47)
 
 Maximum number of tool execution steps
 
@@ -66,7 +66,7 @@ Maximum number of tool execution steps
 
 > `optional` **memoryRelevanceThreshold**: `number`
 
-Defined in: [agents/specialized/Agent.ts:82](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L82)
+Defined in: [agents/specialized/Agent.ts:82](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L82)
 
 The minimum relevance score for memory augmentation (0-1)
 
@@ -76,7 +76,7 @@ The minimum relevance score for memory augmentation (0-1)
 
 > `optional` **memoryService**: [`BaseMemoryService`](BaseMemoryService.md)
 
-Defined in: [agents/specialized/Agent.ts:52](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L52)
+Defined in: [agents/specialized/Agent.ts:52](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L52)
 
 Memory service for long-term storage and retrieval
 
@@ -86,7 +86,7 @@ Memory service for long-term storage and retrieval
 
 > **model**: `string`
 
-Defined in: [agents/specialized/Agent.ts:32](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L32)
+Defined in: [agents/specialized/Agent.ts:32](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L32)
 
 The LLM model to use
 
@@ -96,7 +96,7 @@ The LLM model to use
 
 > **name**: `string`
 
-Defined in: [agents/specialized/Agent.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L22)
+Defined in: [agents/specialized/Agent.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L22)
 
 Name of the agent
 
@@ -106,7 +106,7 @@ Name of the agent
 
 > `optional` **sessionService**: [`SessionService`](SessionService.md)
 
-Defined in: [agents/specialized/Agent.ts:57](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L57)
+Defined in: [agents/specialized/Agent.ts:57](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L57)
 
 Session service for managing conversations
 
@@ -116,7 +116,7 @@ Session service for managing conversations
 
 > `optional` **tools**: [`BaseTool`](../classes/BaseTool.md)[]
 
-Defined in: [agents/specialized/Agent.ts:42](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L42)
+Defined in: [agents/specialized/Agent.ts:42](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L42)
 
 Tools available to the agent
 
@@ -126,7 +126,7 @@ Tools available to the agent
 
 > `optional` **useMemoryAugmentation**: `boolean`
 
-Defined in: [agents/specialized/Agent.ts:72](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L72)
+Defined in: [agents/specialized/Agent.ts:72](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L72)
 
 Whether to automatically augment prompts with relevant memory
 
@@ -136,6 +136,6 @@ Whether to automatically augment prompts with relevant memory
 
 > `optional` **userId**: `string`
 
-Defined in: [agents/specialized/Agent.ts:62](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/specialized/Agent.ts#L62)
+Defined in: [agents/specialized/Agent.ts:62](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/specialized/Agent.ts#L62)
 
 User ID for the session (required for session persistence)

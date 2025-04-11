@@ -6,7 +6,7 @@
 
 # Interface: SearchMemoryOptions
 
-Defined in: [models/memory/MemoryService.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/MemoryService.ts#L36)
+Defined in: [models/memory/MemoryService.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/MemoryService.ts#L36)
 
 Options for memory search
 
@@ -16,7 +16,7 @@ Options for memory search
 
 > `optional` **filter**: `Record`\<`string`, `any`\>
 
-Defined in: [models/memory/MemoryService.ts:55](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/MemoryService.ts#L55)
+Defined in: [models/memory/MemoryService.ts:55](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/MemoryService.ts#L55)
 
 Additional filter criteria
 
@@ -26,7 +26,7 @@ Additional filter criteria
 
 > `optional` **limit**: `number`
 
-Defined in: [models/memory/MemoryService.ts:45](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/MemoryService.ts#L45)
+Defined in: [models/memory/MemoryService.ts:45](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/MemoryService.ts#L45)
 
 Maximum number of results to return
 
@@ -36,7 +36,7 @@ Maximum number of results to return
 
 > `optional` **sessionId**: `string`
 
-Defined in: [models/memory/MemoryService.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/MemoryService.ts#L40)
+Defined in: [models/memory/MemoryService.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/MemoryService.ts#L40)
 
 Session ID to search within (null for all sessions)
 
@@ -46,6 +46,6 @@ Session ID to search within (null for all sessions)
 
 > `optional` **threshold**: `number`
 
-Defined in: [models/memory/MemoryService.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/MemoryService.ts#L50)
+Defined in: [models/memory/MemoryService.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/MemoryService.ts#L50)
 
 Minimum relevance score (0-1)

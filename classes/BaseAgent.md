@@ -6,7 +6,7 @@
 
 # Class: `abstract` BaseAgent
 
-Defined in: [agents/base/BaseAgent.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L8)
+Defined in: [agents/base/BaseAgent.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L8)
 
 Base class for all agents in the Agent Development Kit
 
@@ -24,7 +24,7 @@ Base class for all agents in the Agent Development Kit
 
 > **new BaseAgent**(`config`): `BaseAgent`
 
-Defined in: [agents/base/BaseAgent.ts:35](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L35)
+Defined in: [agents/base/BaseAgent.ts:35](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L35)
 
 Constructs a new BaseAgent
 
@@ -50,7 +50,7 @@ Constructs a new BaseAgent
 
 > **description**: `string`
 
-Defined in: [agents/base/BaseAgent.ts:19](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L19)
+Defined in: [agents/base/BaseAgent.ts:19](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L19)
 
 Description about the agent's capability
 The LLM uses this to determine whether to delegate control to the agent
@@ -61,7 +61,7 @@ The LLM uses this to determine whether to delegate control to the agent
 
 > **name**: `string`
 
-Defined in: [agents/base/BaseAgent.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L13)
+Defined in: [agents/base/BaseAgent.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L13)
 
 The agent's name
 Agent name must be a unique identifier within the agent tree
@@ -72,7 +72,7 @@ Agent name must be a unique identifier within the agent tree
 
 > `optional` **parentAgent**: `BaseAgent`
 
-Defined in: [agents/base/BaseAgent.ts:25](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L25)
+Defined in: [agents/base/BaseAgent.ts:25](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L25)
 
 The parent agent of this agent
 Note that an agent can ONLY be added as sub-agent once
@@ -83,7 +83,7 @@ Note that an agent can ONLY be added as sub-agent once
 
 > **subAgents**: `BaseAgent`[]
 
-Defined in: [agents/base/BaseAgent.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L30)
+Defined in: [agents/base/BaseAgent.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L30)
 
 The sub-agents of this agent
 
@@ -95,7 +95,7 @@ The sub-agents of this agent
 
 > **get** **rootAgent**(): `BaseAgent`
 
-Defined in: [agents/base/BaseAgent.ts:56](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L56)
+Defined in: [agents/base/BaseAgent.ts:56](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L56)
 
 Gets the root agent of the agent tree
 
@@ -109,7 +109,7 @@ Gets the root agent of the agent tree
 
 > **addSubAgent**(`agent`): `BaseAgent`
 
-Defined in: [agents/base/BaseAgent.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L63)
+Defined in: [agents/base/BaseAgent.ts:63](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L63)
 
 Adds a sub-agent to this agent
 
@@ -129,7 +129,7 @@ Adds a sub-agent to this agent
 
 > **findAgent**(`name`): `undefined` \| `BaseAgent`
 
-Defined in: [agents/base/BaseAgent.ts:92](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L92)
+Defined in: [agents/base/BaseAgent.ts:92](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L92)
 
 Finds an agent in the agent tree by name
 
@@ -149,7 +149,7 @@ Finds an agent in the agent tree by name
 
 > **findSubAgent**(`name`): `undefined` \| `BaseAgent`
 
-Defined in: [agents/base/BaseAgent.ts:85](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L85)
+Defined in: [agents/base/BaseAgent.ts:85](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L85)
 
 Finds a sub-agent by name
 
@@ -169,7 +169,7 @@ Finds a sub-agent by name
 
 > `abstract` **run**(`options`): `Promise`\<`any`\>
 
-Defined in: [agents/base/BaseAgent.ts:110](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L110)
+Defined in: [agents/base/BaseAgent.ts:110](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L110)
 
 Runs the agent with the given messages and configuration
 
@@ -199,7 +199,7 @@ Runs the agent with the given messages and configuration
 
 > `abstract` **runStreaming**(`options`): `AsyncIterable`\<`any`\>
 
-Defined in: [agents/base/BaseAgent.ts:119](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/agents/base/BaseAgent.ts#L119)
+Defined in: [agents/base/BaseAgent.ts:119](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/agents/base/BaseAgent.ts#L119)
 
 Runs the agent with streaming support
 

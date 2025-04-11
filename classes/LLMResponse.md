@@ -6,7 +6,7 @@
 
 # Class: LLMResponse
 
-Defined in: [models/response/LLMResponse.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L36)
+Defined in: [models/response/LLMResponse.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L36)
 
 Response from an LLM
 
@@ -16,7 +16,7 @@ Response from an LLM
 
 > **new LLMResponse**(`data`): `LLMResponse`
 
-Defined in: [models/response/LLMResponse.ts:67](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L67)
+Defined in: [models/response/LLMResponse.ts:67](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L67)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [models/response/LLMResponse.ts:67](https://github.com/pontus-devote
 
 > `optional` **content**: `null` \| `string`
 
-Defined in: [models/response/LLMResponse.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L40)
+Defined in: [models/response/LLMResponse.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L40)
 
 Content of the response
 
@@ -66,7 +66,7 @@ Content of the response
 
 > `optional` **function\_call**: [`FunctionCall`](../interfaces/FunctionCall.md)
 
-Defined in: [models/response/LLMResponse.ts:45](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L45)
+Defined in: [models/response/LLMResponse.ts:45](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L45)
 
 Function calls in the response
 
@@ -76,7 +76,7 @@ Function calls in the response
 
 > `optional` **is\_partial**: `boolean`
 
-Defined in: [models/response/LLMResponse.ts:60](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L60)
+Defined in: [models/response/LLMResponse.ts:60](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L60)
 
 Whether this is a partial response in a stream
 
@@ -86,7 +86,7 @@ Whether this is a partial response in a stream
 
 > `optional` **raw\_response**: `any`
 
-Defined in: [models/response/LLMResponse.ts:65](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L65)
+Defined in: [models/response/LLMResponse.ts:65](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L65)
 
 Raw provider response
 
@@ -96,7 +96,7 @@ Raw provider response
 
 > **role**: `string`
 
-Defined in: [models/response/LLMResponse.ts:55](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L55)
+Defined in: [models/response/LLMResponse.ts:55](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L55)
 
 Role of the message (usually 'assistant')
 
@@ -106,6 +106,6 @@ Role of the message (usually 'assistant')
 
 > `optional` **tool\_calls**: [`ToolCall`](../interfaces/ToolCall.md)[]
 
-Defined in: [models/response/LLMResponse.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L50)
+Defined in: [models/response/LLMResponse.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L50)
 
 Tool calls in the response

@@ -6,7 +6,7 @@
 
 # Interface: ToolCall
 
-Defined in: [models/response/LLMResponse.ts:21](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L21)
+Defined in: [models/response/LLMResponse.ts:21](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L21)
 
 Tool call result from LLM
 
@@ -16,7 +16,7 @@ Tool call result from LLM
 
 > **function**: [`FunctionCall`](FunctionCall.md)
 
-Defined in: [models/response/LLMResponse.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L30)
+Defined in: [models/response/LLMResponse.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L30)
 
 Function call details
 
@@ -26,6 +26,6 @@ Function call details
 
 > **id**: `string`
 
-Defined in: [models/response/LLMResponse.ts:25](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/response/LLMResponse.ts#L25)
+Defined in: [models/response/LLMResponse.ts:25](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/response/LLMResponse.ts#L25)
 
 Unique ID for the tool call

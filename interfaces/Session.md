@@ -6,7 +6,7 @@
 
 # Interface: Session
 
-Defined in: [models/memory/Session.ts:99](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L99)
+Defined in: [models/memory/Session.ts:99](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L99)
 
 Represents a conversation session
 
@@ -16,7 +16,7 @@ Represents a conversation session
 
 > **createdAt**: `Date`
 
-Defined in: [models/memory/Session.ts:123](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L123)
+Defined in: [models/memory/Session.ts:123](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L123)
 
 Session creation timestamp
 
@@ -26,7 +26,7 @@ Session creation timestamp
 
 > **id**: `string`
 
-Defined in: [models/memory/Session.ts:103](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L103)
+Defined in: [models/memory/Session.ts:103](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L103)
 
 Unique session identifier
 
@@ -36,7 +36,7 @@ Unique session identifier
 
 > **messages**: [`Message`](Message.md)[]
 
-Defined in: [models/memory/Session.ts:113](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L113)
+Defined in: [models/memory/Session.ts:113](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L113)
 
 Conversation history
 
@@ -46,7 +46,7 @@ Conversation history
 
 > **metadata**: `Record`\<`string`, `any`\>
 
-Defined in: [models/memory/Session.ts:118](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L118)
+Defined in: [models/memory/Session.ts:118](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L118)
 
 Additional session metadata
 
@@ -56,7 +56,7 @@ Additional session metadata
 
 > **state**: [`SessionState`](../classes/SessionState.md)
 
-Defined in: [models/memory/Session.ts:133](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L133)
+Defined in: [models/memory/Session.ts:133](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L133)
 
 Session state for storing arbitrary data
 
@@ -66,7 +66,7 @@ Session state for storing arbitrary data
 
 > **updatedAt**: `Date`
 
-Defined in: [models/memory/Session.ts:128](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L128)
+Defined in: [models/memory/Session.ts:128](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L128)
 
 Last update timestamp
 
@@ -76,6 +76,6 @@ Last update timestamp
 
 > **userId**: `string`
 
-Defined in: [models/memory/Session.ts:108](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L108)
+Defined in: [models/memory/Session.ts:108](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L108)
 
 User identifier associated with the session

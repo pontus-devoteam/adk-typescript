@@ -6,7 +6,7 @@
 
 # Class: InMemorySessionService
 
-Defined in: [memory/services/SessionService.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L46)
+Defined in: [memory/services/SessionService.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L46)
 
 In-memory implementation of SessionService
 
@@ -20,7 +20,7 @@ In-memory implementation of SessionService
 
 > **new InMemorySessionService**(): `InMemorySessionService`
 
-Defined in: [memory/services/SessionService.ts:55](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L55)
+Defined in: [memory/services/SessionService.ts:55](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L55)
 
 Constructor for InMemorySessionService
 
@@ -34,7 +34,7 @@ Constructor for InMemorySessionService
 
 > **clear**(): `void`
 
-Defined in: [memory/services/SessionService.ts:163](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L163)
+Defined in: [memory/services/SessionService.ts:163](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L163)
 
 Clears all sessions
 
@@ -48,7 +48,7 @@ Clears all sessions
 
 > **createSession**(`userId`, `metadata`): `Promise`\<[`Session`](../interfaces/Session.md)\>
 
-Defined in: [memory/services/SessionService.ts:65](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L65)
+Defined in: [memory/services/SessionService.ts:65](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L65)
 
 Creates a new session
 
@@ -82,7 +82,7 @@ The created session
 
 > **deleteSession**(`sessionId`): `Promise`\<`void`\>
 
-Defined in: [memory/services/SessionService.ts:156](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L156)
+Defined in: [memory/services/SessionService.ts:156](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L156)
 
 Deletes a session
 
@@ -108,7 +108,7 @@ Session identifier
 
 > **getSession**(`sessionId`): `Promise`\<`undefined` \| [`Session`](../interfaces/Session.md)\>
 
-Defined in: [memory/services/SessionService.ts:88](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L88)
+Defined in: [memory/services/SessionService.ts:88](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L88)
 
 Gets a session by ID
 
@@ -136,7 +136,7 @@ The session or undefined if not found
 
 > **listSessions**(`userId`, `options?`): `Promise`\<[`Session`](../interfaces/Session.md)[]\>
 
-Defined in: [memory/services/SessionService.ts:110](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L110)
+Defined in: [memory/services/SessionService.ts:110](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L110)
 
 Lists sessions for a user
 
@@ -170,7 +170,7 @@ Array of matching sessions
 
 > **updateSession**(`session`): `Promise`\<`void`\>
 
-Defined in: [memory/services/SessionService.ts:96](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L96)
+Defined in: [memory/services/SessionService.ts:96](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L96)
 
 Updates an existing session
 

@@ -6,7 +6,7 @@
 
 # Class: GoogleSearch
 
-Defined in: [tools/common/GoogleSearch.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/common/GoogleSearch.ts#L8)
+Defined in: [tools/common/GoogleSearch.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/common/GoogleSearch.ts#L8)
 
 Simple GoogleSearch tool implementation
 
@@ -20,7 +20,7 @@ Simple GoogleSearch tool implementation
 
 > **new GoogleSearch**(): `GoogleSearch`
 
-Defined in: [tools/common/GoogleSearch.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/common/GoogleSearch.ts#L12)
+Defined in: [tools/common/GoogleSearch.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/common/GoogleSearch.ts#L12)
 
 Constructor for GoogleSearch
 
@@ -38,7 +38,7 @@ Constructor for GoogleSearch
 
 > **baseRetryDelay**: `number` = `1000`
 
-Defined in: [tools/base/BaseTool.ts:66](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L66)
+Defined in: [tools/base/BaseTool.ts:66](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L66)
 
 Base delay for retry in ms (will be used with exponential backoff)
 
@@ -52,7 +52,7 @@ Base delay for retry in ms (will be used with exponential backoff)
 
 > **description**: `string`
 
-Defined in: [tools/base/BaseTool.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L46)
+Defined in: [tools/base/BaseTool.ts:46](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L46)
 
 Description of the tool
 
@@ -66,7 +66,7 @@ Description of the tool
 
 > **isLongRunning**: `boolean`
 
-Defined in: [tools/base/BaseTool.ts:51](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L51)
+Defined in: [tools/base/BaseTool.ts:51](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L51)
 
 Whether the tool is a long running operation
 
@@ -80,7 +80,7 @@ Whether the tool is a long running operation
 
 > **maxRetryAttempts**: `number`
 
-Defined in: [tools/base/BaseTool.ts:61](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L61)
+Defined in: [tools/base/BaseTool.ts:61](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L61)
 
 Maximum retry attempts
 
@@ -94,7 +94,7 @@ Maximum retry attempts
 
 > **maxRetryDelay**: `number` = `10000`
 
-Defined in: [tools/base/BaseTool.ts:71](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L71)
+Defined in: [tools/base/BaseTool.ts:71](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L71)
 
 Maximum delay for retry in ms
 
@@ -108,7 +108,7 @@ Maximum delay for retry in ms
 
 > **name**: `string`
 
-Defined in: [tools/base/BaseTool.ts:41](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L41)
+Defined in: [tools/base/BaseTool.ts:41](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L41)
 
 Name of the tool
 
@@ -122,7 +122,7 @@ Name of the tool
 
 > **shouldRetryOnFailure**: `boolean`
 
-Defined in: [tools/base/BaseTool.ts:56](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L56)
+Defined in: [tools/base/BaseTool.ts:56](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L56)
 
 Whether the tool execution should be retried on failure
 
@@ -136,7 +136,7 @@ Whether the tool execution should be retried on failure
 
 > **getDeclaration**(): [`FunctionDeclaration`](../interfaces/FunctionDeclaration.md)
 
-Defined in: [tools/common/GoogleSearch.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/common/GoogleSearch.ts#L22)
+Defined in: [tools/common/GoogleSearch.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/common/GoogleSearch.ts#L22)
 
 Get the function declaration for the tool
 
@@ -154,7 +154,7 @@ Get the function declaration for the tool
 
 > **runAsync**(`args`, `_context`): `Promise`\<`any`\>
 
-Defined in: [tools/common/GoogleSearch.ts:48](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/common/GoogleSearch.ts#L48)
+Defined in: [tools/common/GoogleSearch.ts:48](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/common/GoogleSearch.ts#L48)
 
 Execute the search
 This is a simplified implementation that doesn't actually search, just returns mock results
@@ -189,7 +189,7 @@ This is a simplified implementation that doesn't actually search, just returns m
 
 > **safeExecute**(`args`, `context`): `Promise`\<`any`\>
 
-Defined in: [tools/base/BaseTool.ts:141](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L141)
+Defined in: [tools/base/BaseTool.ts:141](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L141)
 
 Executes the tool with error handling and retries
 
@@ -223,7 +223,7 @@ Result of the tool execution or error information
 
 > **validateArguments**(`args`): `boolean`
 
-Defined in: [tools/base/BaseTool.ts:104](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/tools/base/BaseTool.ts#L104)
+Defined in: [tools/base/BaseTool.ts:104](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/tools/base/BaseTool.ts#L104)
 
 Validates the arguments against the schema in the function declaration
 

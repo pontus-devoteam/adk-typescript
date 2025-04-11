@@ -6,7 +6,7 @@
 
 # Class: ToolContext
 
-Defined in: [models/context/ToolContext.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L40)
+Defined in: [models/context/ToolContext.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L40)
 
 Context for tool execution
 
@@ -20,7 +20,7 @@ Context for tool execution
 
 > **new ToolContext**(`options`): `ToolContext`
 
-Defined in: [models/context/ToolContext.ts:74](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L74)
+Defined in: [models/context/ToolContext.ts:74](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L74)
 
 Constructor for ToolContext
 
@@ -50,7 +50,7 @@ Constructor for ToolContext
 
 > `optional` **auth**: [`AuthHandler`](AuthHandler.md)
 
-Defined in: [models/context/ToolContext.ts:49](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L49)
+Defined in: [models/context/ToolContext.ts:49](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L49)
 
 Authentication handler for the tool
 
@@ -60,7 +60,7 @@ Authentication handler for the tool
 
 > **parameters**: `Record`\<`string`, `any`\>
 
-Defined in: [models/context/ToolContext.ts:54](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L54)
+Defined in: [models/context/ToolContext.ts:54](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L54)
 
 Additional parameters for the tool
 
@@ -74,7 +74,7 @@ Additional parameters for the tool
 
 > **toolId**: `string` = `''`
 
-Defined in: [models/context/ToolContext.ts:64](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L64)
+Defined in: [models/context/ToolContext.ts:64](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L64)
 
 Tool ID
 
@@ -88,7 +88,7 @@ Tool ID
 
 > **toolName**: `string` = `''`
 
-Defined in: [models/context/ToolContext.ts:59](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L59)
+Defined in: [models/context/ToolContext.ts:59](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L59)
 
 Tool name
 
@@ -104,7 +104,7 @@ Tool name
 
 > **get** **appName**(): `undefined` \| `string`
 
-Defined in: [models/context/ToolContext.ts:106](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L106)
+Defined in: [models/context/ToolContext.ts:106](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L106)
 
 ##### Returns
 
@@ -118,7 +118,7 @@ Defined in: [models/context/ToolContext.ts:106](https://github.com/pontus-devote
 
 > **get** **config**(): [`RunConfig`](RunConfig.md)
 
-Defined in: [models/context/ToolContext.ts:104](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L104)
+Defined in: [models/context/ToolContext.ts:104](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L104)
 
 ##### Returns
 
@@ -132,7 +132,7 @@ Defined in: [models/context/ToolContext.ts:104](https://github.com/pontus-devote
 
 > **get** **memoryService**(): `undefined` \| [`BaseMemoryService`](../interfaces/BaseMemoryService.md)
 
-Defined in: [models/context/ToolContext.ts:107](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L107)
+Defined in: [models/context/ToolContext.ts:107](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L107)
 
 ##### Returns
 
@@ -146,7 +146,7 @@ Defined in: [models/context/ToolContext.ts:107](https://github.com/pontus-devote
 
 > **get** **messages**(): [`Message`](../interfaces/Message.md)[]
 
-Defined in: [models/context/ToolContext.ts:103](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L103)
+Defined in: [models/context/ToolContext.ts:103](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L103)
 
 ##### Returns
 
@@ -160,7 +160,7 @@ Defined in: [models/context/ToolContext.ts:103](https://github.com/pontus-devote
 
 > **get** **metadata**(): `Record`\<`string`, `any`\>
 
-Defined in: [models/context/ToolContext.ts:109](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L109)
+Defined in: [models/context/ToolContext.ts:109](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L109)
 
 ##### Returns
 
@@ -174,7 +174,7 @@ Defined in: [models/context/ToolContext.ts:109](https://github.com/pontus-devote
 
 > **get** **sessionId**(): `string`
 
-Defined in: [models/context/ToolContext.ts:102](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L102)
+Defined in: [models/context/ToolContext.ts:102](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L102)
 
 ##### Returns
 
@@ -188,7 +188,7 @@ Defined in: [models/context/ToolContext.ts:102](https://github.com/pontus-devote
 
 > **get** **sessionService**(): `undefined` \| [`SessionService`](../interfaces/SessionService.md)
 
-Defined in: [models/context/ToolContext.ts:108](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L108)
+Defined in: [models/context/ToolContext.ts:108](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L108)
 
 ##### Returns
 
@@ -202,7 +202,7 @@ Defined in: [models/context/ToolContext.ts:108](https://github.com/pontus-devote
 
 > **get** **userId**(): `undefined` \| `string`
 
-Defined in: [models/context/ToolContext.ts:105](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L105)
+Defined in: [models/context/ToolContext.ts:105](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L105)
 
 ##### Returns
 
@@ -216,7 +216,7 @@ Defined in: [models/context/ToolContext.ts:105](https://github.com/pontus-devote
 
 > **get** **variables**(): `Map`\<`string`, `any`\>
 
-Defined in: [models/context/ToolContext.ts:112](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L112)
+Defined in: [models/context/ToolContext.ts:112](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L112)
 
 ##### Returns
 
@@ -228,7 +228,7 @@ Defined in: [models/context/ToolContext.ts:112](https://github.com/pontus-devote
 
 > **addMessage**(`message`): `void`
 
-Defined in: [models/context/ToolContext.ts:121](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L121)
+Defined in: [models/context/ToolContext.ts:121](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L121)
 
 #### Parameters
 
@@ -246,7 +246,7 @@ Defined in: [models/context/ToolContext.ts:121](https://github.com/pontus-devote
 
 > **getParameter**\<`T`\>(`name`, `defaultValue?`): `undefined` \| `T`
 
-Defined in: [models/context/ToolContext.ts:88](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L88)
+Defined in: [models/context/ToolContext.ts:88](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L88)
 
 Gets a parameter value
 
@@ -280,7 +280,7 @@ Gets a parameter value
 
 > **getVariable**\<`T`\>(`name`, `defaultValue?`): `undefined` \| `T`
 
-Defined in: [models/context/ToolContext.ts:114](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L114)
+Defined in: [models/context/ToolContext.ts:114](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L114)
 
 #### Type Parameters
 
@@ -308,7 +308,7 @@ Defined in: [models/context/ToolContext.ts:114](https://github.com/pontus-devote
 
 > **loadSession**(): `Promise`\<`undefined` \| [`Session`](../interfaces/Session.md)\>
 
-Defined in: [models/context/ToolContext.ts:122](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L122)
+Defined in: [models/context/ToolContext.ts:122](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L122)
 
 #### Returns
 
@@ -320,7 +320,7 @@ Defined in: [models/context/ToolContext.ts:122](https://github.com/pontus-devote
 
 > **saveSession**(): `Promise`\<`undefined` \| [`Session`](../interfaces/Session.md)\>
 
-Defined in: [models/context/ToolContext.ts:123](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L123)
+Defined in: [models/context/ToolContext.ts:123](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L123)
 
 #### Returns
 
@@ -332,7 +332,7 @@ Defined in: [models/context/ToolContext.ts:123](https://github.com/pontus-devote
 
 > **searchMemory**(`query`, `options?`): `Promise`\<[`SearchMemoryResponse`](../interfaces/SearchMemoryResponse.md)\>
 
-Defined in: [models/context/ToolContext.ts:124](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L124)
+Defined in: [models/context/ToolContext.ts:124](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L124)
 
 #### Parameters
 
@@ -354,7 +354,7 @@ Defined in: [models/context/ToolContext.ts:124](https://github.com/pontus-devote
 
 > **setParameter**(`name`, `value`): `void`
 
-Defined in: [models/context/ToolContext.ts:97](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L97)
+Defined in: [models/context/ToolContext.ts:97](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L97)
 
 Sets a parameter value
 
@@ -382,7 +382,7 @@ Sets a parameter value
 
 > **setVariable**(`name`, `value`): `void`
 
-Defined in: [models/context/ToolContext.ts:113](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/context/ToolContext.ts#L113)
+Defined in: [models/context/ToolContext.ts:113](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/context/ToolContext.ts#L113)
 
 #### Parameters
 

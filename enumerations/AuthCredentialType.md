@@ -6,7 +6,7 @@
 
 # Enumeration: AuthCredentialType
 
-Defined in: [models/auth/AuthCredential.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L7)
+Defined in: [models/auth/AuthCredential.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L7)
 
 Types of authentication credentials
 
@@ -16,7 +16,7 @@ Types of authentication credentials
 
 > **API\_KEY**: `"api_key"`
 
-Defined in: [models/auth/AuthCredential.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L8)
+Defined in: [models/auth/AuthCredential.ts:8](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L8)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [models/auth/AuthCredential.ts:8](https://github.com/pontus-devoteam
 
 > **BASIC**: `"basic"`
 
-Defined in: [models/auth/AuthCredential.ts:9](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L9)
+Defined in: [models/auth/AuthCredential.ts:9](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L9)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [models/auth/AuthCredential.ts:9](https://github.com/pontus-devoteam
 
 > **BEARER**: `"bearer"`
 
-Defined in: [models/auth/AuthCredential.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L10)
+Defined in: [models/auth/AuthCredential.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L10)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [models/auth/AuthCredential.ts:10](https://github.com/pontus-devotea
 
 > **CUSTOM**: `"custom"`
 
-Defined in: [models/auth/AuthCredential.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L12)
+Defined in: [models/auth/AuthCredential.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L12)
 
 ***
 
@@ -48,4 +48,4 @@ Defined in: [models/auth/AuthCredential.ts:12](https://github.com/pontus-devotea
 
 > **OAUTH2**: `"oauth2"`
 
-Defined in: [models/auth/AuthCredential.ts:11](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L11)
+Defined in: [models/auth/AuthCredential.ts:11](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L11)

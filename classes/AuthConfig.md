@@ -6,7 +6,7 @@
 
 # Class: AuthConfig
 
-Defined in: [models/auth/AuthConfig.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthConfig.ts#L6)
+Defined in: [models/auth/AuthConfig.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthConfig.ts#L6)
 
 Authentication configuration for tools
 
@@ -16,7 +16,7 @@ Authentication configuration for tools
 
 > **new AuthConfig**(`config`): `AuthConfig`
 
-Defined in: [models/auth/AuthConfig.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthConfig.ts#L20)
+Defined in: [models/auth/AuthConfig.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthConfig.ts#L20)
 
 Constructor for AuthConfig
 
@@ -42,7 +42,7 @@ Constructor for AuthConfig
 
 > **authScheme**: [`AuthScheme`](AuthScheme.md)
 
-Defined in: [models/auth/AuthConfig.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthConfig.ts#L10)
+Defined in: [models/auth/AuthConfig.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthConfig.ts#L10)
 
 The authentication scheme
 
@@ -52,6 +52,6 @@ The authentication scheme
 
 > `optional` **context**: `Record`\<`string`, `any`\>
 
-Defined in: [models/auth/AuthConfig.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthConfig.ts#L15)
+Defined in: [models/auth/AuthConfig.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthConfig.ts#L15)
 
 Additional context properties

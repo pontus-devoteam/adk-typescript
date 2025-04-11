@@ -6,7 +6,7 @@
 
 # Class: `abstract` AuthScheme
 
-Defined in: [models/auth/AuthScheme.ts:14](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L14)
+Defined in: [models/auth/AuthScheme.ts:14](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L14)
 
 Base class for authentication schemes
 
@@ -23,7 +23,7 @@ Base class for authentication schemes
 
 > **new AuthScheme**(`type`): `AuthScheme`
 
-Defined in: [models/auth/AuthScheme.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L20)
+Defined in: [models/auth/AuthScheme.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L20)
 
 #### Parameters
 
@@ -41,6 +41,6 @@ Defined in: [models/auth/AuthScheme.ts:20](https://github.com/pontus-devoteam/ad
 
 > **type**: [`AuthSchemeType`](../enumerations/AuthSchemeType.md)
 
-Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L18)
+Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L18)
 
 The type of authentication scheme

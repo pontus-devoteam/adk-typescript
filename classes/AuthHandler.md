@@ -6,7 +6,7 @@
 
 # Class: AuthHandler
 
-Defined in: [models/auth/AuthHandler.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L7)
+Defined in: [models/auth/AuthHandler.ts:7](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L7)
 
 Handler for authentication in tools
 
@@ -16,7 +16,7 @@ Handler for authentication in tools
 
 > **new AuthHandler**(`config`): `AuthHandler`
 
-Defined in: [models/auth/AuthHandler.ts:21](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L21)
+Defined in: [models/auth/AuthHandler.ts:21](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L21)
 
 Constructor for AuthHandler
 
@@ -42,7 +42,7 @@ Constructor for AuthHandler
 
 > **authConfig**: [`AuthConfig`](AuthConfig.md)
 
-Defined in: [models/auth/AuthHandler.ts:11](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L11)
+Defined in: [models/auth/AuthHandler.ts:11](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L11)
 
 The authentication configuration
 
@@ -52,7 +52,7 @@ The authentication configuration
 
 > `optional` **credential**: [`AuthCredential`](AuthCredential.md)
 
-Defined in: [models/auth/AuthHandler.ts:16](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L16)
+Defined in: [models/auth/AuthHandler.ts:16](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L16)
 
 The authentication credential
 
@@ -62,7 +62,7 @@ The authentication credential
 
 > **getHeaders**(): `Record`\<`string`, `string`\>
 
-Defined in: [models/auth/AuthHandler.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L39)
+Defined in: [models/auth/AuthHandler.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L39)
 
 Gets headers for HTTP requests
 
@@ -76,7 +76,7 @@ Gets headers for HTTP requests
 
 > **getToken**(): `undefined` \| `string`
 
-Defined in: [models/auth/AuthHandler.ts:32](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L32)
+Defined in: [models/auth/AuthHandler.ts:32](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L32)
 
 Gets the authentication token
 
@@ -90,7 +90,7 @@ Gets the authentication token
 
 > **refreshToken**(): `Promise`\<`void`\>
 
-Defined in: [models/auth/AuthHandler.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthHandler.ts#L50)
+Defined in: [models/auth/AuthHandler.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthHandler.ts#L50)
 
 Refreshes the token if necessary
 

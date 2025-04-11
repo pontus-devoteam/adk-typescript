@@ -6,7 +6,7 @@
 
 # Class: SessionState
 
-Defined in: [models/memory/Session.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L6)
+Defined in: [models/memory/Session.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L6)
 
 Represents the state of a session
 
@@ -16,7 +16,7 @@ Represents the state of a session
 
 > **new SessionState**(): `SessionState`
 
-Defined in: [models/memory/Session.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L10)
+Defined in: [models/memory/Session.ts:10](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L10)
 
 #### Returns
 
@@ -28,7 +28,7 @@ Defined in: [models/memory/Session.ts:10](https://github.com/pontus-devoteam/adk
 
 > **clearDelta**(): `void`
 
-Defined in: [models/memory/Session.ts:68](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L68)
+Defined in: [models/memory/Session.ts:68](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L68)
 
 Clears the dirty state
 
@@ -42,7 +42,7 @@ Clears the dirty state
 
 > **delete**(`key`): `boolean`
 
-Defined in: [models/memory/Session.ts:48](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L48)
+Defined in: [models/memory/Session.ts:48](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L48)
 
 Deletes a key from the state
 
@@ -66,7 +66,7 @@ Whether the key was deleted
 
 > **get**\<`T`\>(`key`): `undefined` \| `T`
 
-Defined in: [models/memory/Session.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L30)
+Defined in: [models/memory/Session.ts:30](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L30)
 
 Gets a value from the state
 
@@ -96,7 +96,7 @@ The value or undefined if not present
 
 > **has**(`key`): `boolean`
 
-Defined in: [models/memory/Session.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L39)
+Defined in: [models/memory/Session.ts:39](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L39)
 
 Checks if the state has a key
 
@@ -120,7 +120,7 @@ Whether the key exists
 
 > **hasDelta**(): `boolean`
 
-Defined in: [models/memory/Session.ts:61](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L61)
+Defined in: [models/memory/Session.ts:61](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L61)
 
 Checks if state has changed since last save
 
@@ -136,7 +136,7 @@ Whether the state has been modified
 
 > **set**(`key`, `value`): `void`
 
-Defined in: [models/memory/Session.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L20)
+Defined in: [models/memory/Session.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L20)
 
 Sets a value in the state
 
@@ -164,7 +164,7 @@ The value to set
 
 > **toObject**(): `Record`\<`string`, `any`\>
 
-Defined in: [models/memory/Session.ts:75](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L75)
+Defined in: [models/memory/Session.ts:75](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L75)
 
 Converts the state to a plain object
 
@@ -178,7 +178,7 @@ Converts the state to a plain object
 
 > `static` **fromObject**(`obj`): `SessionState`
 
-Defined in: [models/memory/Session.ts:87](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/memory/Session.ts#L87)
+Defined in: [models/memory/Session.ts:87](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/memory/Session.ts#L87)
 
 Creates a state from a plain object
 

@@ -6,7 +6,7 @@
 
 # Class: PersistentMemoryService
 
-Defined in: [memory/services/PersistentMemoryService.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L31)
+Defined in: [memory/services/PersistentMemoryService.ts:31](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L31)
 
 A file-based implementation of memory service that persists data to disk
 This provides durability across application restarts
@@ -21,7 +21,7 @@ This provides durability across application restarts
 
 > **new PersistentMemoryService**(`config`): `PersistentMemoryService`
 
-Defined in: [memory/services/PersistentMemoryService.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L50)
+Defined in: [memory/services/PersistentMemoryService.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L50)
 
 Constructor for PersistentMemoryService
 
@@ -41,7 +41,7 @@ Constructor for PersistentMemoryService
 
 > **addSessionToMemory**(`session`): `Promise`\<`void`\>
 
-Defined in: [memory/services/PersistentMemoryService.ts:68](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L68)
+Defined in: [memory/services/PersistentMemoryService.ts:68](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L68)
 
 Adds a session to memory and persists to disk
 
@@ -67,7 +67,7 @@ The session to add
 
 > **clear**(): `Promise`\<`void`\>
 
-Defined in: [memory/services/PersistentMemoryService.ts:208](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L208)
+Defined in: [memory/services/PersistentMemoryService.ts:208](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L208)
 
 Clears all sessions from memory and disk
 
@@ -81,7 +81,7 @@ Clears all sessions from memory and disk
 
 > **deleteSession**(`sessionId`): `Promise`\<`void`\>
 
-Defined in: [memory/services/PersistentMemoryService.ts:188](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L188)
+Defined in: [memory/services/PersistentMemoryService.ts:188](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L188)
 
 Deletes a session from memory and disk
 
@@ -103,7 +103,7 @@ Session ID to delete
 
 > **getAllSessions**(): [`Session`](../interfaces/Session.md)[]
 
-Defined in: [memory/services/PersistentMemoryService.ts:171](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L171)
+Defined in: [memory/services/PersistentMemoryService.ts:171](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L171)
 
 Gets all sessions in memory
 
@@ -119,7 +119,7 @@ Array of sessions
 
 > **getSession**(`sessionId`): `undefined` \| [`Session`](../interfaces/Session.md)
 
-Defined in: [memory/services/PersistentMemoryService.ts:180](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L180)
+Defined in: [memory/services/PersistentMemoryService.ts:180](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L180)
 
 Gets a session by ID
 
@@ -143,7 +143,7 @@ The session or undefined if not found
 
 > **searchMemory**(`query`, `options?`): `Promise`\<[`SearchMemoryResponse`](../interfaces/SearchMemoryResponse.md)\>
 
-Defined in: [memory/services/PersistentMemoryService.ts:82](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/PersistentMemoryService.ts#L82)
+Defined in: [memory/services/PersistentMemoryService.ts:82](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/PersistentMemoryService.ts#L82)
 
 Searches memory for relevant information
 

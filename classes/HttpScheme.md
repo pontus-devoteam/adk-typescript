@@ -6,7 +6,7 @@
 
 # Class: HttpScheme
 
-Defined in: [models/auth/AuthScheme.ts:62](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L62)
+Defined in: [models/auth/AuthScheme.ts:62](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L62)
 
 HTTP authentication scheme
 
@@ -20,7 +20,7 @@ HTTP authentication scheme
 
 > **new HttpScheme**(`config`): `HttpScheme`
 
-Defined in: [models/auth/AuthScheme.ts:81](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L81)
+Defined in: [models/auth/AuthScheme.ts:81](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L81)
 
 Constructor for HttpScheme
 
@@ -54,7 +54,7 @@ Constructor for HttpScheme
 
 > `optional` **bearerFormat**: `string`
 
-Defined in: [models/auth/AuthScheme.ts:71](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L71)
+Defined in: [models/auth/AuthScheme.ts:71](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L71)
 
 Bearer format when scheme is 'bearer'
 
@@ -64,7 +64,7 @@ Bearer format when scheme is 'bearer'
 
 > `optional` **description**: `string`
 
-Defined in: [models/auth/AuthScheme.ts:76](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L76)
+Defined in: [models/auth/AuthScheme.ts:76](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L76)
 
 Description of the scheme
 
@@ -74,7 +74,7 @@ Description of the scheme
 
 > **scheme**: `"basic"` \| `"bearer"` \| `"digest"` \| `"other"`
 
-Defined in: [models/auth/AuthScheme.ts:66](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L66)
+Defined in: [models/auth/AuthScheme.ts:66](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L66)
 
 The HTTP authentication scheme
 
@@ -84,7 +84,7 @@ The HTTP authentication scheme
 
 > **type**: [`AuthSchemeType`](../enumerations/AuthSchemeType.md)
 
-Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthScheme.ts#L18)
+Defined in: [models/auth/AuthScheme.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthScheme.ts#L18)
 
 The type of authentication scheme
 

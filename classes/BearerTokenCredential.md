@@ -6,7 +6,7 @@
 
 # Class: BearerTokenCredential
 
-Defined in: [models/auth/AuthCredential.ts:137](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L137)
+Defined in: [models/auth/AuthCredential.ts:137](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L137)
 
 Bearer token credential
 
@@ -20,7 +20,7 @@ Bearer token credential
 
 > **new BearerTokenCredential**(`token`): `BearerTokenCredential`
 
-Defined in: [models/auth/AuthCredential.ts:146](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L146)
+Defined in: [models/auth/AuthCredential.ts:146](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L146)
 
 Constructor for BearerTokenCredential
 
@@ -44,7 +44,7 @@ Constructor for BearerTokenCredential
 
 > **token**: `string`
 
-Defined in: [models/auth/AuthCredential.ts:141](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L141)
+Defined in: [models/auth/AuthCredential.ts:141](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L141)
 
 The bearer token
 
@@ -54,7 +54,7 @@ The bearer token
 
 > **type**: [`AuthCredentialType`](../enumerations/AuthCredentialType.md)
 
-Defined in: [models/auth/AuthCredential.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L22)
+Defined in: [models/auth/AuthCredential.ts:22](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L22)
 
 Type of credential
 
@@ -68,7 +68,7 @@ Type of credential
 
 > **canRefresh**(): `boolean`
 
-Defined in: [models/auth/AuthCredential.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L44)
+Defined in: [models/auth/AuthCredential.ts:44](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L44)
 
 Whether the token can be refreshed
 
@@ -86,7 +86,7 @@ Whether the token can be refreshed
 
 > **getHeaders**(): `Record`\<`string`, `string`\>
 
-Defined in: [models/auth/AuthCredential.ts:161](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L161)
+Defined in: [models/auth/AuthCredential.ts:161](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L161)
 
 Gets headers for HTTP requests
 
@@ -104,7 +104,7 @@ Gets headers for HTTP requests
 
 > **getToken**(): `string`
 
-Defined in: [models/auth/AuthCredential.ts:154](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L154)
+Defined in: [models/auth/AuthCredential.ts:154](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L154)
 
 Gets the bearer token
 
@@ -122,7 +122,7 @@ Gets the bearer token
 
 > **refresh**(): `Promise`\<`void`\>
 
-Defined in: [models/auth/AuthCredential.ts:51](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/models/auth/AuthCredential.ts#L51)
+Defined in: [models/auth/AuthCredential.ts:51](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/models/auth/AuthCredential.ts#L51)
 
 Refreshes the token
 

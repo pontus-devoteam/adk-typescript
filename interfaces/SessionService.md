@@ -6,7 +6,7 @@
 
 # Interface: SessionService
 
-Defined in: [memory/services/SessionService.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L6)
+Defined in: [memory/services/SessionService.ts:6](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L6)
 
 Service for managing sessions
 
@@ -16,7 +16,7 @@ Service for managing sessions
 
 > **createSession**(`userId`, `metadata?`): `Promise`\<[`Session`](Session.md)\>
 
-Defined in: [memory/services/SessionService.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L13)
+Defined in: [memory/services/SessionService.ts:13](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L13)
 
 Creates a new session
 
@@ -46,7 +46,7 @@ The created session
 
 > **deleteSession**(`sessionId`): `Promise`\<`void`\>
 
-Defined in: [memory/services/SessionService.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L40)
+Defined in: [memory/services/SessionService.ts:40](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L40)
 
 Deletes a session
 
@@ -68,7 +68,7 @@ Session identifier
 
 > **getSession**(`sessionId`): `Promise`\<`undefined` \| [`Session`](Session.md)\>
 
-Defined in: [memory/services/SessionService.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L20)
+Defined in: [memory/services/SessionService.ts:20](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L20)
 
 Gets a session by ID
 
@@ -92,7 +92,7 @@ The session or undefined if not found
 
 > **listSessions**(`userId`, `options?`): `Promise`\<[`Session`](Session.md)[]\>
 
-Defined in: [memory/services/SessionService.ts:34](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L34)
+Defined in: [memory/services/SessionService.ts:34](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L34)
 
 Lists sessions for a user
 
@@ -122,7 +122,7 @@ Array of matching sessions
 
 > **updateSession**(`session`): `Promise`\<`void`\>
 
-Defined in: [memory/services/SessionService.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/SessionService.ts#L26)
+Defined in: [memory/services/SessionService.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/SessionService.ts#L26)
 
 Updates an existing session
 

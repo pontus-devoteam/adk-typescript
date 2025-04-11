@@ -10,7 +10,6 @@
   </p>
 
   <p align="center">
-  [![CI](https://github.com/pontus-devoteam/adk-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/pontus-devoteam/adk-typescript/actions/workflows/ci.yml)
     <a href="https://www.npmjs.com/package/@pontus-devoteam/adk">
       <img src="https://img.shields.io/npm/v/@pontus-devoteam/adk" alt="npm version" />
     </a>

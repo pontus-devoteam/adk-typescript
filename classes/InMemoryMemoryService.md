@@ -6,7 +6,7 @@
 
 # Class: InMemoryMemoryService
 
-Defined in: [memory/services/InMemoryMemoryService.ts:9](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L9)
+Defined in: [memory/services/InMemoryMemoryService.ts:9](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L9)
 
 An in-memory memory service for development and testing
 Stores sessions and conversations in memory without persistence
@@ -21,7 +21,7 @@ Stores sessions and conversations in memory without persistence
 
 > **new InMemoryMemoryService**(): `InMemoryMemoryService`
 
-Defined in: [memory/services/InMemoryMemoryService.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L18)
+Defined in: [memory/services/InMemoryMemoryService.ts:18](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L18)
 
 Constructor for InMemoryMemoryService
 
@@ -35,7 +35,7 @@ Constructor for InMemoryMemoryService
 
 > **addSessionToMemory**(`session`): `Promise`\<`void`\>
 
-Defined in: [memory/services/InMemoryMemoryService.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L26)
+Defined in: [memory/services/InMemoryMemoryService.ts:26](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L26)
 
 Adds a session to the memory service
 
@@ -61,7 +61,7 @@ The session to add
 
 > **clear**(): `void`
 
-Defined in: [memory/services/InMemoryMemoryService.ts:145](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L145)
+Defined in: [memory/services/InMemoryMemoryService.ts:145](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L145)
 
 Clears all sessions from memory
 
@@ -75,7 +75,7 @@ Clears all sessions from memory
 
 > **getAllSessions**(): [`Session`](../interfaces/Session.md)[]
 
-Defined in: [memory/services/InMemoryMemoryService.ts:129](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L129)
+Defined in: [memory/services/InMemoryMemoryService.ts:129](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L129)
 
 Gets all sessions in the memory service
 
@@ -91,7 +91,7 @@ All sessions
 
 > **getSession**(`sessionId`): `undefined` \| [`Session`](../interfaces/Session.md)
 
-Defined in: [memory/services/InMemoryMemoryService.ts:138](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L138)
+Defined in: [memory/services/InMemoryMemoryService.ts:138](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L138)
 
 Gets a session by ID
 
@@ -115,7 +115,7 @@ The session or undefined if not found
 
 > **searchMemory**(`query`, `options?`): `Promise`\<[`SearchMemoryResponse`](../interfaces/SearchMemoryResponse.md)\>
 
-Defined in: [memory/services/InMemoryMemoryService.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/memory/services/InMemoryMemoryService.ts#L36)
+Defined in: [memory/services/InMemoryMemoryService.ts:36](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/memory/services/InMemoryMemoryService.ts#L36)
 
 Searches memory for relevant information
 

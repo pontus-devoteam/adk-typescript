@@ -6,7 +6,7 @@
 
 # Class: OpenAILLMConnection
 
-Defined in: [llm/providers/openai/OpenAILLMConnection.ts:9](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLMConnection.ts#L9)
+Defined in: [llm/providers/openai/OpenAILLMConnection.ts:9](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLMConnection.ts#L9)
 
 OpenAI LLM Connection
 
@@ -20,7 +20,7 @@ OpenAI LLM Connection
 
 > **new OpenAILLMConnection**(`client`, `model`, `initialRequest`, `defaultParams`): `OpenAILLMConnection`
 
-Defined in: [llm/providers/openai/OpenAILLMConnection.ts:53](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLMConnection.ts#L53)
+Defined in: [llm/providers/openai/OpenAILLMConnection.ts:53](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLMConnection.ts#L53)
 
 Constructor for OpenAILLMConnection
 
@@ -58,7 +58,7 @@ Constructor for OpenAILLMConnection
 
 > **get** **isActive**(): `boolean`
 
-Defined in: [llm/BaseLLMConnection.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L15)
+Defined in: [llm/BaseLLMConnection.ts:15](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L15)
 
 Gets whether the connection is active
 
@@ -76,7 +76,7 @@ Gets whether the connection is active
 
 > **close**(): `void`
 
-Defined in: [llm/BaseLLMConnection.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLMConnection.ts#L50)
+Defined in: [llm/BaseLLMConnection.ts:50](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLMConnection.ts#L50)
 
 Closes the connection
 
@@ -94,7 +94,7 @@ Closes the connection
 
 > **onEnd**(`callback`): `void`
 
-Defined in: [llm/providers/openai/OpenAILLMConnection.ts:318](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLMConnection.ts#L318)
+Defined in: [llm/providers/openai/OpenAILLMConnection.ts:318](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLMConnection.ts#L318)
 
 Registers an end handler
 
@@ -118,7 +118,7 @@ Registers an end handler
 
 > **onError**(`callback`): `void`
 
-Defined in: [llm/providers/openai/OpenAILLMConnection.ts:311](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLMConnection.ts#L311)
+Defined in: [llm/providers/openai/OpenAILLMConnection.ts:311](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLMConnection.ts#L311)
 
 Registers an error handler
 
@@ -142,7 +142,7 @@ Registers an error handler
 
 > **onResponse**(`callback`): `void`
 
-Defined in: [llm/providers/openai/OpenAILLMConnection.ts:304](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLMConnection.ts#L304)
+Defined in: [llm/providers/openai/OpenAILLMConnection.ts:304](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLMConnection.ts#L304)
 
 Registers a response handler
 
@@ -166,7 +166,7 @@ Registers a response handler
 
 > **send**(`message`): `Promise`\<`void`\>
 
-Defined in: [llm/providers/openai/OpenAILLMConnection.ts:117](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLMConnection.ts#L117)
+Defined in: [llm/providers/openai/OpenAILLMConnection.ts:117](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLMConnection.ts#L117)
 
 Sends a message to the OpenAI model
 

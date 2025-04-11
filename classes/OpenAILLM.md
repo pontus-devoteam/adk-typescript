@@ -6,7 +6,7 @@
 
 # Class: OpenAILLM
 
-Defined in: [llm/providers/openai/OpenAILLM.ts:61](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLM.ts#L61)
+Defined in: [llm/providers/openai/OpenAILLM.ts:61](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLM.ts#L61)
 
 OpenAI LLM implementation
 
@@ -20,7 +20,7 @@ OpenAI LLM implementation
 
 > **new OpenAILLM**(`model`, `config?`): `OpenAILLM`
 
-Defined in: [llm/providers/openai/OpenAILLM.ts:75](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLM.ts#L75)
+Defined in: [llm/providers/openai/OpenAILLM.ts:75](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLM.ts#L75)
 
 Constructor for OpenAILLM
 
@@ -48,7 +48,7 @@ Constructor for OpenAILLM
 
 > **model**: `string`
 
-Defined in: [llm/BaseLLM.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/BaseLLM.ts#L12)
+Defined in: [llm/BaseLLM.ts:12](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/BaseLLM.ts#L12)
 
 The name of the LLM model
 
@@ -62,7 +62,7 @@ The name of the LLM model
 
 > **connect**(`llmRequest`): [`BaseLLMConnection`](BaseLLMConnection.md)
 
-Defined in: [llm/providers/openai/OpenAILLM.ts:379](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLM.ts#L379)
+Defined in: [llm/providers/openai/OpenAILLM.ts:379](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLM.ts#L379)
 
 Creates a live connection to the LLM
 
@@ -86,7 +86,7 @@ Creates a live connection to the LLM
 
 > **generateContentAsync**(`llmRequest`, `stream`): `AsyncGenerator`\<[`LLMResponse`](LLMResponse.md), `void`, `unknown`\>
 
-Defined in: [llm/providers/openai/OpenAILLM.ts:278](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLM.ts#L278)
+Defined in: [llm/providers/openai/OpenAILLM.ts:278](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLM.ts#L278)
 
 Generates content from the given request
 
@@ -114,7 +114,7 @@ Generates content from the given request
 
 > `static` **supportedModels**(): `string`[]
 
-Defined in: [llm/providers/openai/OpenAILLM.ts:98](https://github.com/pontus-devoteam/adk-typescript/blob/debe65286edf8e899c3500f5b5966544d2447b8d/src/llm/providers/openai/OpenAILLM.ts#L98)
+Defined in: [llm/providers/openai/OpenAILLM.ts:98](https://github.com/pontus-devoteam/adk-typescript/blob/9fe8a397cfb495545a029b2d9b6f8a0adf2c2de5/src/llm/providers/openai/OpenAILLM.ts#L98)
 
 Returns a list of supported models in regex for LLMRegistry
 
