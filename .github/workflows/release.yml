@@ -70,6 +70,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Check Current Version
+        id: current-version
+        run: |
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          echo "Current version: $CURRENT_VERSION"
+          echo "Target version: ${{ github.event.inputs.version }}"
+          echo "current_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+        
       - name: Update version in package.json
         run: npm version ${{ github.event.inputs.version }} --no-git-tag-version
       
@@ -101,28 +109,16 @@ jobs:
             --title "Release v${{ github.event.inputs.version }}" \
             --notes "${{ github.event.inputs.releaseNotes }}"
       
-      - name: Check NPM Organization Access
-        id: check-org
+      - name: Verify NPM authentication
         run: |
-          ORG_DETAILS=$(npm org ls pontus-devoteam 2>/dev/null || echo "not-found")
-          if [[ "$ORG_DETAILS" == "not-found" ]]; then
-            echo "NPM organization '@pontus-devoteam' not found or you don't have access. Creating package with --access public flag."
-            echo "exists=false" >> $GITHUB_OUTPUT
-          else
-            echo "NPM organization '@pontus-devoteam' exists and you have access."
-            echo "exists=true" >> $GITHUB_OUTPUT
-          fi
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+          npm whoami
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish to NPM (New Scoped Package)
-        if: steps.check-org.outputs.exists == 'false'
-        run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          
-      - name: Publish to NPM (Existing Package)
-        if: steps.check-org.outputs.exists == 'true'
-        run: npm publish
+      - name: Publish to NPM
+        run: |
+          echo "Publishing version ${{ github.event.inputs.version }} to NPM..."
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
