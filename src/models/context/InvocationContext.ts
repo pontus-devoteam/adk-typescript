@@ -54,6 +54,11 @@ export class InvocationContext {
   private variables: Map<string, any>;
   
   /**
+   * In-memory storage for node execution results
+   */
+  memory: Map<string, any> = new Map<string, any>();
+  
+  /**
    * Constructor for InvocationContext
    */
   constructor(options: {

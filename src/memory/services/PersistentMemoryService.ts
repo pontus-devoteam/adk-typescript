@@ -156,7 +156,9 @@ export class PersistentMemoryService implements BaseMemoryService {
         }
       }
       
-      console.log(`Loaded ${this.inMemoryService.getAllSessions().length} sessions from persistent storage`);
+      if (process.env.DEBUG === 'true') {
+        console.log(`Loaded ${this.inMemoryService.getAllSessions().length} sessions from persistent storage`);
+      }
     } catch (error) {
       console.error('Error loading memory files:', error);
     }

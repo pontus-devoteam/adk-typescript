@@ -54,7 +54,9 @@ export class ParallelAgent extends BaseAgent {
     config?: RunConfig;
   }): Promise<LLMResponse> {
     // Log execution
-    console.log(`[ParallelAgent] Running ${this.subAgents.length} sub-agents in parallel`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`[ParallelAgent] Running ${this.subAgents.length} sub-agents in parallel`);
+    }
     
     if (this.subAgents.length === 0) {
       return {
@@ -106,7 +108,9 @@ export class ParallelAgent extends BaseAgent {
     config?: RunConfig;
   }): AsyncIterable<LLMResponse> {
     // Log execution
-    console.log(`[ParallelAgent] Streaming ${this.subAgents.length} sub-agents in parallel`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`[ParallelAgent] Streaming ${this.subAgents.length} sub-agents in parallel`);
+    }
     
     if (this.subAgents.length === 0) {
       yield {

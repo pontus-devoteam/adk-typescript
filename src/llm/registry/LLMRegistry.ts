@@ -75,9 +75,11 @@ export class LLMRegistry {
    * Logs all registered models for debugging
    */
   static logRegisteredModels(): void {
-    console.log("Registered LLM models:");
-    for (const [regex, llmClass] of LLMRegistry.llmRegistry.entries()) {
-      console.log(`  - Pattern: ${regex.toString()}`);
+    if (process.env.DEBUG === 'true') {
+      console.log("Registered LLM models:");
+      for (const [regex, llmClass] of LLMRegistry.llmRegistry.entries()) {
+        console.log(`  - Pattern: ${regex.toString()}`);
+      }
     }
   }
 }

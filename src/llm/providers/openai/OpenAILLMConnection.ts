@@ -85,6 +85,33 @@ export class OpenAILLMConnection extends BaseLLMConnection {
   }
   
   /**
+   * Adds a tool/function result message to the conversation history
+   * This method ensures we don't duplicate tool_call_id values
+   */
+  private addToolResultMessage(toolCallId: string, name: string, content: string): void {
+    // Check if there's already a message with this tool_call_id
+    const existingMessageIndex = this.messages.findIndex(
+      (msg) => (msg as any).tool_call_id === toolCallId
+    );
+    
+    // If found, update it instead of adding a new one
+    if (existingMessageIndex >= 0) {
+      this.messages[existingMessageIndex] = {
+        role: 'tool',
+        content,
+        tool_call_id: toolCallId
+      };
+    } else {
+      // Add as a new message
+      this.messages.push({
+        role: 'tool',
+        content,
+        tool_call_id: toolCallId
+      });
+    }
+  }
+  
+  /**
    * Sends a message to the OpenAI model
    */
   async send(message: string): Promise<void> {
@@ -204,15 +231,70 @@ export class OpenAILLMConnection extends BaseLLMConnection {
         })) : undefined
       });
       
-      // Call the end callback
-      if (this.endCallback) {
-        this.endCallback();
+      // If we have a final function call, add a function result message
+      if (functionCall) {
+        // Notify listeners that the response is complete
+        if (this.responseCallback) {
+          const response = new LLMResponse({
+            content: responseContent,
+            function_call: functionCall,
+            role: 'assistant',
+            is_partial: false
+          });
+          
+          this.responseCallback(response);
+        }
+        
+        if (this.endCallback) {
+          this.endCallback();
+        }
+      }
+      // If we have tool calls, add tool result messages
+      else if (toolCalls.length > 0) {
+        // Notify listeners that the response is complete
+        if (this.responseCallback) {
+          const response = new LLMResponse({
+            content: responseContent,
+            tool_calls: toolCalls.map(tool => ({
+              id: tool.id,
+              function: {
+                name: tool.function.name,
+                arguments: tool.function.arguments
+              }
+            })),
+            role: 'assistant',
+            is_partial: false
+          });
+          
+          this.responseCallback(response);
+        }
+        
+        if (this.endCallback) {
+          this.endCallback();
+        }
+      }
+      // Simple text response
+      else {
+        // Notify listeners that the response is complete
+        if (this.responseCallback) {
+          const response = new LLMResponse({
+            content: responseContent,
+            role: 'assistant',
+            is_partial: false
+          });
+          
+          this.responseCallback(response);
+        }
+        
+        if (this.endCallback) {
+          this.endCallback();
+        }
       }
     } catch (error) {
-      // Handle errors
       if (this.errorCallback) {
-        this.errorCallback(error instanceof Error ? error : new Error(String(error)));
+        this.errorCallback(error as Error);
       }
+      throw error;
     }
   }
   

@@ -1,8 +1,15 @@
-import { Agent, LLMRequest, Message, MessageRole, RunConfig } from '@pontus-devoteam/adk';
+import { Agent } from '../../src/agents/specialized/Agent';
+import { Message, MessageRole } from '../../src/models/request/LLMRequest';
+import { RunConfig } from '../../src/models/config/RunConfig';
+import { OpenAILLM } from '../../src/llm/providers/openai/OpenAILLM';
+import { LLMRegistry } from '../../src/llm/registry/LLMRegistry';
 import dotenv from 'dotenv';
 
 // Load environment variables from .env file if it exists
 dotenv.config();
+
+// Register the OpenAI LLM
+LLMRegistry.registerLLM(OpenAILLM);
 
 // Initialize the agent with OpenAI's gpt-3.5-turbo model
 const agent = new Agent({

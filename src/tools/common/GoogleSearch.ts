@@ -49,7 +49,9 @@ export class GoogleSearch extends BaseTool {
     query: string;
     num_results?: number;
   }, _context: ToolContext): Promise<any> {
-    console.log(`Executing Google search for: ${args.query}`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`Executing Google search for: ${args.query}`);
+    }
     
     // This would be replaced with an actual API call to Google Search API
     return {

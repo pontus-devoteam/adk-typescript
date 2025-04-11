@@ -1,0 +1,27 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "excludePrivate": true,
+  "excludeProtected": false,
+  "excludeExternals": true,
+  "excludeInternal": true,
+  "readme": "README.md",
+  "theme": "default",
+  "name": "ADK TypeScript Documentation",
+  "includeVersion": true,
+  "categorizeByGroup": true,
+  "categoryOrder": ["Core", "Agents", "LLM", "Tools", "Models", "Memory", "*"],
+  "plugin": ["typedoc-plugin-markdown"],
+  "githubPages": true,
+  "searchInComments": true,
+  "visibilityFilters": {
+    "protected": true,
+    "private": false,
+    "inherited": true,
+    "external": false
+  },
+  "navigationLinks": {
+    "GitHub": "https://github.com/pontus-devoteam/adk-typescript",
+    "NPM": "https://www.npmjs.com/package/@pontus-devoteam/adk"
+  }
+} 

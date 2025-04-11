@@ -101,20 +101,26 @@ export class LoopAgent extends BaseAgent {
   ): Promise<boolean> {
     // Stop if we've reached maximum iterations
     if (iterationCount >= this.maxIterations) {
-      console.log(`[LoopAgent] Maximum iterations (${this.maxIterations}) reached. Stopping loop.`);
+      if (process.env.DEBUG === 'true') {
+        console.log(`[LoopAgent] Maximum iterations (${this.maxIterations}) reached. Stopping loop.`);
+      }
       return false;
     }
     
     // Use custom condition check if provided
     if (this.conditionCheck) {
       const shouldContinue = await this.conditionCheck(response);
-      console.log(`[LoopAgent] Custom condition check result: ${shouldContinue}`);
+      if (process.env.DEBUG === 'true') {
+        console.log(`[LoopAgent] Custom condition check result: ${shouldContinue}`);
+      }
       return shouldContinue;
     }
     
     // Use condition agent if provided
     if (this.conditionAgent) {
-      console.log(`[LoopAgent] Using condition agent ${this.conditionAgent.name} to check loop condition`);
+      if (process.env.DEBUG === 'true') {
+        console.log(`[LoopAgent] Using condition agent ${this.conditionAgent.name} to check loop condition`);
+      }
       
       // Add the response to messages for the condition agent
       const conditionMessages: Message[] = [
@@ -140,7 +146,9 @@ export class LoopAgent extends BaseAgent {
         const content = conditionResponse.content?.toLowerCase() || '';
         const shouldContinue = content.includes('yes') && !content.includes('no');
         
-        console.log(`[LoopAgent] Condition agent result: ${shouldContinue ? 'Continue loop' : 'Stop loop'}`);
+        if (process.env.DEBUG === 'true') {
+          console.log(`[LoopAgent] Condition agent result: ${shouldContinue ? 'Continue loop' : 'Stop loop'}`);
+        }
         return shouldContinue;
       } catch (error) {
         console.error(`[LoopAgent] Error in condition agent:`, error);
@@ -161,7 +169,9 @@ export class LoopAgent extends BaseAgent {
     config?: RunConfig;
   }): Promise<LLMResponse> {
     // Log execution
-    console.log(`[LoopAgent] Starting loop with max ${this.maxIterations} iterations`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`[LoopAgent] Starting loop with max ${this.maxIterations} iterations`);
+    }
     
     if (this.subAgents.length === 0) {
       return {
@@ -182,7 +192,9 @@ export class LoopAgent extends BaseAgent {
     // Execute the loop
     while (shouldContinueLoop && iterationCount < this.maxIterations) {
       iterationCount++;
-      console.log(`[LoopAgent] Running iteration ${iterationCount}/${this.maxIterations}`);
+      if (process.env.DEBUG === 'true') {
+        console.log(`[LoopAgent] Running iteration ${iterationCount}/${this.maxIterations}`);
+      }
       
       try {
         // Run the agent
@@ -217,10 +229,7 @@ export class LoopAgent extends BaseAgent {
         }
       } catch (error) {
         console.error(`[LoopAgent] Error in loop iteration ${iterationCount}:`, error);
-        return {
-          content: `Error in loop iteration ${iterationCount}: ${error instanceof Error ? error.message : String(error)}`,
-          role: 'assistant'
-        };
+        break;
       }
     }
     
@@ -247,7 +256,9 @@ export class LoopAgent extends BaseAgent {
     config?: RunConfig;
   }): AsyncIterable<LLMResponse> {
     // Log execution
-    console.log(`[LoopAgent] Starting loop with max ${this.maxIterations} iterations (streaming)`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`[LoopAgent] Starting loop with max ${this.maxIterations} iterations (streaming)`);
+    }
     
     if (this.subAgents.length === 0) {
       yield {
@@ -275,7 +286,9 @@ export class LoopAgent extends BaseAgent {
     // Execute the loop
     while (shouldContinueLoop && iterationCount < this.maxIterations) {
       iterationCount++;
-      console.log(`[LoopAgent] Running iteration ${iterationCount}/${this.maxIterations} (streaming)`);
+      if (process.env.DEBUG === 'true') {
+        console.log(`[LoopAgent] Running iteration ${iterationCount}/${this.maxIterations} (streaming)`);
+      }
       
       // Status update for this iteration
       yield {
@@ -312,7 +325,9 @@ export class LoopAgent extends BaseAgent {
         
         // Need the last complete chunk for condition checking
         if (!lastChunk) {
-          console.warn(`[LoopAgent] No complete chunk received from iteration ${iterationCount}`);
+          if (process.env.DEBUG === 'true') {
+            console.warn(`[LoopAgent] No complete chunk received from iteration ${iterationCount}`);
+          }
           shouldContinueLoop = false;
           continue;
         }

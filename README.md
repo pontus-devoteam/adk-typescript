@@ -81,6 +81,13 @@ ANTHROPIC_API_KEY=your_anthropic_api_key_here
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
+## 📊 Status
+
+[![CI](https://github.com/pontus-devoteam/adk-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/pontus-devoteam/adk-typescript/actions/workflows/ci.yml)
+[![Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/pontus-devoteam/BADGE_GIST_ID/raw/adk-typescript-coverage.json)](https://github.com/pontus-devoteam/adk-typescript)
+[![Documentation Status](https://github.com/pontus-devoteam/adk-typescript/actions/workflows/docs.yml/badge.svg)](https://pontus-devoteam.github.io/adk-typescript/)
+[![npm version](https://badge.fury.io/js/%40pontus-devoteam%2Fadk.svg)](https://www.npmjs.com/package/@pontus-devoteam/adk)
+
 ## 📚 Usage
 
 ### Basic Agent
@@ -100,6 +107,103 @@ const response = await agent.run({
 });
 
 console.log(response.content);
+```
+
+### Specialized Agents
+
+The ADK provides several specialized agent types:
+
+```typescript
+import { SequentialAgent, ParallelAgent, LoopAgent, LangGraphAgent } from '@pontus-devoteam/adk';
+
+// Sequential Agent - Agents that run in sequence
+const sequentialAgent = new SequentialAgent({
+  name: "sequential_chain",
+  agents: [agent1, agent2, agent3]
+});
+
+// Parallel Agent - Agents that run in parallel
+const parallelAgent = new ParallelAgent({
+  name: "parallel_workers",
+  agents: [agentA, agentB, agentC]
+});
+
+// Loop Agent - Runs in a loop until a condition is met
+const loopAgent = new LoopAgent({
+  name: "iterative_processor",
+  agent: baseAgent,
+  maxIterations: 5
+});
+
+// LangGraph Agent - Complex agent workflows as a graph
+const graphAgent = new LangGraphAgent({
+  name: "workflow_agent",
+  nodes: {
+    "start": { agent: startAgent },
+    "process": { agent: processAgent },
+    "end": { agent: endAgent }
+  },
+  edges: [
+    { from: "start", to: "process", condition: (response) => response.content.includes("ready") },
+    { from: "process", to: "end" }
+  ],
+  rootNode: "start"
+});
+```
+
+### Working with LLM Providers Directly
+
+For more control, you can work with LLM providers directly:
+
+```typescript
+import { OpenAILLM, AnthropicLLM, GoogleLLM, LLMRequest } from '@pontus-devoteam/adk';
+
+// Using OpenAI directly
+const openai = new OpenAILLM("gpt-4-turbo");
+const response = await openai.generateContent(new LLMRequest({
+  messages: [{ role: 'user', content: 'Hello, OpenAI!' }]
+}));
+
+// Using Anthropic directly
+const anthropic = new AnthropicLLM("claude-3-opus");
+const claudeResponse = await anthropic.generateContent(new LLMRequest({
+  messages: [{ role: 'user', content: 'Hello, Claude!' }]
+}));
+
+// Using Google/Gemini directly
+const gemini = new GoogleLLM("gemini-1.5-pro");
+const geminiResponse = await gemini.generateContent(new LLMRequest({
+  messages: [{ role: 'user', content: 'Hello, Gemini!' }]
+}));
+```
+
+### Using Namespaced Imports
+
+For cleaner imports, you can use the namespaced exports:
+
+```typescript
+import { Agents, LLMs, Tools, Models, Memory } from '@pontus-devoteam/adk';
+
+// Using namespaces
+const agent = new Agents.Agent({
+  name: "namespace_agent",
+  model: "gpt-4-turbo"
+});
+
+const llm = new LLMs.OpenAILLM("gpt-4-turbo");
+
+const search = new Tools.GoogleSearch({
+  apiKey: process.env.GOOGLE_API_KEY
+});
+
+const message: Models.Message = {
+  role: 'user',
+  content: 'Hello!'
+};
+
+const memoryService = new Memory.PersistentMemoryService({
+  storageDir: './.memory'
+});
 ```
 
 ### Agent with Tools
@@ -196,6 +300,29 @@ const response = await agent.run({
 console.log(response.content);
 ```
 
+## 📖 Documentation
+
+Comprehensive API documentation is available at [https://pontus-devoteam.github.io/adk-typescript/](https://pontus-devoteam.github.io/adk-typescript/).
+
+The documentation includes:
+- Detailed API reference for all classes and interfaces
+- Component diagrams and architecture overview
+- Examples and use cases
+- Integration guides for different LLM providers
+
+To generate the documentation locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Generate the documentation
+npm run docs
+
+# View the documentation
+# Open ./docs/index.html in your browser
+```
+
 ## 🧪 Examples
 
 The `examples/` directory contains several example implementations:
@@ -246,6 +373,22 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 5. Open a Pull Request
 
 Please ensure your code follows the project's coding standards.
+
+## 📦 Releases
+
+Releases are managed through a GitHub workflow that can be triggered manually.
+
+1. Go to the GitHub repository
+2. Navigate to the Actions tab
+3. Select the "Release" workflow
+4. Click "Run workflow"
+5. Enter the version number (following semver) and release notes
+6. Click "Run workflow" to start the release process
+
+The release workflow will:
+1. Run all tests and code quality checks
+2. Create a GitHub release with the provided notes
+3. Publish the package to NPM
 
 ## 📄 License
 

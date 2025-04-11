@@ -2,6 +2,36 @@ import { FunctionDeclaration } from '../../models/request/FunctionDeclaration';
 import { ToolContext } from '../../models/context/ToolContext';
 
 /**
+ * Configuration for tool initialization
+ */
+export interface ToolConfig {
+  /**
+   * Name of the tool
+   */
+  name: string;
+  
+  /**
+   * Description of the tool
+   */
+  description: string;
+  
+  /**
+   * Whether the tool is a long running operation
+   */
+  isLongRunning?: boolean;
+  
+  /**
+   * Whether the tool execution should be retried on failure
+   */
+  shouldRetryOnFailure?: boolean;
+  
+  /**
+   * Maximum retry attempts
+   */
+  maxRetryAttempts?: number;
+}
+
+/**
  * The base class for all tools
  */
 export abstract class BaseTool {
@@ -29,17 +59,21 @@ export abstract class BaseTool {
    * Maximum retry attempts
    */
   maxRetryAttempts: number;
+
+  /**
+   * Base delay for retry in ms (will be used with exponential backoff)
+   */
+  baseRetryDelay: number = 1000;
+
+  /**
+   * Maximum delay for retry in ms
+   */
+  maxRetryDelay: number = 10000;
   
   /**
    * Constructor for BaseTool
    */
-  constructor(config: {
-    name: string;
-    description: string;
-    isLongRunning?: boolean;
-    shouldRetryOnFailure?: boolean;
-    maxRetryAttempts?: number;
-  }) {
+  constructor(config: ToolConfig) {
     this.name = config.name;
     this.description = config.description;
     this.isLongRunning = config.isLongRunning || false;
@@ -59,12 +93,8 @@ export abstract class BaseTool {
   
   /**
    * Gets the OpenAPI specification of this tool in the form of a FunctionDeclaration
-   * Required if subclass uses the default implementation of `processLLMRequest`
-   * to add function declaration to LLM request.
    */
-  getDeclaration(): FunctionDeclaration | null {
-    return null;
-  }
+  abstract getDeclaration(): FunctionDeclaration;
   
   /**
    * Validates the arguments against the schema in the function declaration
@@ -124,10 +154,20 @@ export abstract class BaseTool {
     while (attempts <= (this.shouldRetryOnFailure ? this.maxRetryAttempts : 0)) {
       try {
         if (attempts > 0) {
-          console.log(`Retrying tool ${this.name} (attempt ${attempts} of ${this.maxRetryAttempts})...`);
+          if (process.env.DEBUG === 'true') {
+            console.log(`Retrying tool ${this.name} (attempt ${attempts} of ${this.maxRetryAttempts})...`);
+          }
+          
+          const delay = Math.min(
+            this.baseRetryDelay * Math.pow(2, attempts - 1) + Math.random() * 1000,
+            this.maxRetryDelay
+          );
+
+          await new Promise(resolve => setTimeout(resolve, delay));
+          
+          const result = await this.runAsync(args, context);
+          return { result };
         }
-        
-        return await this.runAsync(args, context);
       } catch (error) {
         lastError = error instanceof Error ? error : new Error(String(error));
         console.error(`Error executing tool ${this.name}:`, lastError.message);

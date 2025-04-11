@@ -1,14 +1,47 @@
 import { InvocationContext } from './InvocationContext';
 import { AuthHandler } from '../auth/AuthHandler';
+import { Message } from '../request/LLMRequest';
+import { Session } from '../memory/Session';
+import { SearchMemoryOptions, SearchMemoryResponse } from '../memory/MemoryService';
 
 /**
  * Context for tool execution
  */
-export class ToolContext {
+export interface IToolContext {
+  /**
+   * Name of the tool being executed
+   */
+  toolName: string;
+
+  /**
+   * ID of the tool call
+   */
+  toolId: string;
+
+  /**
+   * Additional parameters for the tool
+   */
+  parameters: Record<string, any>;
+
+  /**
+   * Gets a parameter value
+   */
+  getParameter<T>(name: string, defaultValue?: T): T | undefined;
+
+  /**
+   * Sets a parameter value
+   */
+  setParameter(name: string, value: any): void;
+}
+
+/**
+ * Context for tool execution
+ */
+export class ToolContext implements IToolContext {
   /**
    * The parent invocation context
    */
-  invocationContext: InvocationContext;
+  private invocationContext: InvocationContext;
   
   /**
    * Authentication handler for the tool
@@ -19,6 +52,21 @@ export class ToolContext {
    * Additional parameters for the tool
    */
   parameters: Record<string, any>;
+
+  /**
+   * Tool name
+   */
+  toolName: string = '';
+
+  /**
+   * Tool ID
+   */
+  toolId: string = '';
+
+  /**
+   * Variables stored in the context
+   */
+  private _variables: Map<string, any>;
   
   /**
    * Constructor for ToolContext
@@ -31,6 +79,7 @@ export class ToolContext {
     this.invocationContext = options.invocationContext;
     this.auth = options.auth;
     this.parameters = options.parameters || {};
+    this._variables = new Map<string, any>();
   }
   
   /**
@@ -47,5 +96,32 @@ export class ToolContext {
    */
   setParameter(name: string, value: any): void {
     this.parameters[name] = value;
+  }
+
+  // Delegate to invocation context
+  get sessionId(): string { return this.invocationContext.sessionId; }
+  get messages() { return this.invocationContext.messages; }
+  get config() { return this.invocationContext.config; }
+  get userId() { return this.invocationContext.userId; }
+  get appName() { return this.invocationContext.appName; }
+  get memoryService() { return this.invocationContext.memoryService; }
+  get sessionService() { return this.invocationContext.sessionService; }
+  get metadata() { return this.invocationContext.metadata; }
+
+  // Variable management
+  get variables(): Map<string, any> { return this._variables; }
+  setVariable(name: string, value: any): void { this._variables.set(name, value); }
+  getVariable<T>(name: string, defaultValue?: T): T | undefined {
+    return (this._variables.has(name)
+      ? this._variables.get(name)
+      : defaultValue) as T | undefined;
+  }
+
+  // Delegate session operations
+  addMessage(message: Message): void { this.invocationContext.addMessage(message); }
+  async loadSession(): Promise<Session | undefined> { return this.invocationContext.loadSession(); }
+  async saveSession(): Promise<Session | undefined> { return this.invocationContext.saveSession(); }
+  async searchMemory(query: string, options?: SearchMemoryOptions): Promise<SearchMemoryResponse> {
+    return this.invocationContext.searchMemory(query, options);
   }
 } 

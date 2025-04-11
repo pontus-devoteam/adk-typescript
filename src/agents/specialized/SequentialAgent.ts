@@ -61,7 +61,9 @@ export class SequentialAgent extends BaseAgent {
     config?: RunConfig;
   }): Promise<EnhancedLLMResponse> {
     // Log execution
-    console.log(`[SequentialAgent] Running ${this.subAgents.length} sub-agents in sequence`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`[SequentialAgent] Running ${this.subAgents.length} sub-agents in sequence`);
+    }
     
     if (this.subAgents.length === 0) {
       return {
@@ -81,7 +83,10 @@ export class SequentialAgent extends BaseAgent {
     // Execute agents in sequence
     for (let i = 0; i < this.subAgents.length; i++) {
       const agent = this.subAgents[i];
-      console.log(`[SequentialAgent] Running sub-agent ${i + 1}/${this.subAgents.length}: ${agent.name}`);
+      
+      if (process.env.DEBUG === 'true') {
+        console.log(`[SequentialAgent] Running sub-agent ${i + 1}/${this.subAgents.length}: ${agent.name}`);
+      }
       
       try {
         // Run the current agent with the messages
@@ -149,7 +154,9 @@ export class SequentialAgent extends BaseAgent {
     config?: RunConfig;
   }): AsyncIterable<EnhancedLLMResponse> {
     // Log execution
-    console.log(`[SequentialAgent] Streaming ${this.subAgents.length} sub-agents in sequence`);
+    if (process.env.DEBUG === 'true') {
+      console.log(`[SequentialAgent] Streaming ${this.subAgents.length} sub-agents in sequence`);
+    }
     
     if (this.subAgents.length === 0) {
       yield {
@@ -169,7 +176,10 @@ export class SequentialAgent extends BaseAgent {
     // Execute agents in sequence with streaming
     for (let i = 0; i < this.subAgents.length; i++) {
       const agent = this.subAgents[i];
-      console.log(`[SequentialAgent] Streaming sub-agent ${i + 1}/${this.subAgents.length}: ${agent.name}`);
+      
+      if (process.env.DEBUG === 'true') {
+        console.log(`[SequentialAgent] Streaming sub-agent ${i + 1}/${this.subAgents.length}: ${agent.name}`);
+      }
       
       try {
         // Run the current agent with streaming

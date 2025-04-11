@@ -113,8 +113,6 @@ export class OpenAILLM extends BaseLLM {
     // Extract base content as string
     const baseContent = typeof message.content === 'string' ? message.content : '';
     let baseMessage: OpenAI.Chat.ChatCompletionMessageParam;
-    // For assistant messages, we'll create this separately
-    let assistantMsg: OpenAI.Chat.ChatCompletionAssistantMessageParam;
     
     switch (message.role) {
       case 'user':
@@ -125,20 +123,22 @@ export class OpenAILLM extends BaseLLM {
         break;
       
       case 'assistant':
-        assistantMsg = {
+        baseMessage = {
           role: 'assistant',
           content: baseContent
         };
         
-        // Add function call if present
-        if (message.function_call) {
-          assistantMsg.function_call = {
-            name: message.function_call.name,
-            arguments: message.function_call.arguments
-          };
+        // Add tool calls if present
+        if (message.tool_calls && message.tool_calls.length > 0) {
+          (baseMessage as any).tool_calls = message.tool_calls.map(tc => ({
+            id: tc.id,
+            type: 'function',
+            function: {
+              name: tc.function.name,
+              arguments: tc.function.arguments
+            }
+          }));
         }
-        
-        baseMessage = assistantMsg;
         break;
       
       case 'system':
@@ -148,21 +148,15 @@ export class OpenAILLM extends BaseLLM {
         };
         break;
       
-      case 'function':
-        // Function messages require a name
-        baseMessage = {
-          role: 'function',
-          name: message.name || '',
-          content: baseContent
-        };
-        break;
-      
       case 'tool':
         // Tool messages require a tool_call_id
+        if (!message.tool_call_id) {
+          throw new Error('Tool messages must have a tool_call_id');
+        }
         baseMessage = {
           role: 'tool',
           content: baseContent,
-          tool_call_id: message.tool_call_id || 'unknown'
+          tool_call_id: message.tool_call_id
         };
         break;
       

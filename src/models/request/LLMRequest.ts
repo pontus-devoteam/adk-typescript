@@ -1,4 +1,5 @@
 import { FunctionDeclaration } from './FunctionDeclaration';
+import { ToolCall } from '../response/LLMResponse';
 
 /**
  * Message role types for conversation history
@@ -39,6 +40,7 @@ export interface Message {
     name: string;
     arguments: string;
   };
+  tool_calls?: ToolCall[];
   tool_call_id?: string;
 }
 

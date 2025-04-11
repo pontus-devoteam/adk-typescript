@@ -1,11 +1,15 @@
-import { Agent, BaseTool, Message, MessageRole } from '@pontus-devoteam/adk';
-import { FunctionDeclaration } from '@pontus-devoteam/adk/models/request/FunctionDeclaration';
-import { ToolContext } from '@pontus-devoteam/adk/models/context/ToolContext';
+import { Agent, BaseTool, Message, MessageRole } from '../../src';
+import { FunctionDeclaration } from '../../src/models/request/FunctionDeclaration';
+import { ToolContext } from '../../src/models/context/ToolContext';
+import { OpenAILLM } from '../../src/llm/providers/openai/OpenAILLM';
+import { LLMRegistry } from '../../src/llm/registry/LLMRegistry';
 import * as dotenv from 'dotenv';
 
 // Load environment variables from .env file
 dotenv.config();
 
+// Register the OpenAI LLM
+LLMRegistry.registerLLM(OpenAILLM);
 
 // Enable debug mode for showing agent loop
 const DEBUG = true;

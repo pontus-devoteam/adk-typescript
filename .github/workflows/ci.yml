@@ -1,0 +1,108 @@
+# This file is temporarily disabled for troubleshooting
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Run linter
+        run: npm run lint
+        
+      - name: Build
+        run: npm run build
+        
+      - name: Run tests
+        run: npm test
+        
+      - name: Upload coverage artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ matrix.node-version }}
+          path: coverage/
+          retention-days: 5
+
+  # Security scan job
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        continue-on-error: true # Don't fail the build for security warnings during development
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=high
+
+  # Dependency review
+  dependency-review:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v3
+
+  # Update README badges
+  update-badges:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download coverage artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-20.x
+          path: coverage/
+
+      - name: Check for coverage summary file
+        id: check-coverage
+        run: |
+          if [ -f "./coverage/coverage-summary.json" ]; then
+            echo "file_exists=true" >> $GITHUB_OUTPUT
+            echo "coverage=$(cat ./coverage/coverage-summary.json | jq -r '.total.lines.pct')" >> $GITHUB_OUTPUT
+          else
+            echo "file_exists=false" >> $GITHUB_OUTPUT
+            echo "coverage=unknown" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Badges
+        if: steps.check-coverage.outputs.file_exists == 'true'
+        continue-on-error: true
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST_SECRET || github.token }}
+          gistID: ${{ secrets.BADGE_GIST_ID || '' }}
+          filename: adk-typescript-coverage.json
+          label: Coverage
+          message: ${{ steps.check-coverage.outputs.coverage }}%
+          color: ${{ steps.check-coverage.outputs.coverage >= 80 && 'green' || (steps.check-coverage.outputs.coverage >= 50 && 'yellow' || 'red') }}
+          namedLogo: jest 
