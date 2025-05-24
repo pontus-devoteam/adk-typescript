@@ -143,6 +143,9 @@ export class AnthropicLLM extends BaseLLM {
     return [
       // Claude 4 models
       'claude-4-.*',
+      'claude-sonnet-4-.*',
+      'claude-haiku-4-.*',
+      'claude-opus-4-.*',
       // Claude 3 models
       'claude-3-.*',
       // Claude 2 models
