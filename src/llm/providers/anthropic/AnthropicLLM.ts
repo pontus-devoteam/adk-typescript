@@ -141,6 +141,8 @@ export class AnthropicLLM extends BaseLLM {
    */
   static supportedModels(): string[] {
     return [
+      // Claude 4 models
+      'claude-4-.*',
       // Claude 3 models
       'claude-3-.*',
       // Claude 2 models
