@@ -1,6 +1,6 @@
 {
   "name": "@pontus-devoteam/adk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Agent Development Kit for TypeScript with multi-provider LLM support",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
